@@ -46,6 +46,13 @@ for _, pipe in pairs(data.raw["pipe-to-ground"]) do
   end
 end
 
+for _, pole in pairs(data.raw["electric-pole"]) do
+  pole.maximum_wire_distance = math.min(pole.maximum_wire_distance * 1.5, 64) -- engine maximum
+  -- Keep the supply area on the tile grid: x.5 for 1x1 poles, whole numbers for 2x2.
+  local grid_offset = pole.supply_area_distance % 1
+  pole.supply_area_distance = math.floor(pole.supply_area_distance * 1.5 - grid_offset + 0.5) + grid_offset
+end
+
 for _, battery_type in pairs({ "accumulator", "battery-equipment" }) do
   for _, battery in pairs(data.raw[battery_type]) do
     battery.energy_source.buffer_capacity = scale_energy(battery.energy_source.buffer_capacity)

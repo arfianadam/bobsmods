@@ -135,3 +135,6 @@ for machine_type, names in pairs({
     end
   end
 end
+
+-- Electric furnaces get a second 1.5x on top, matching Bob's electric furnace 2 and 3.
+data.raw.furnace["electric-furnace"].crafting_speed = data.raw.furnace["electric-furnace"].crafting_speed * 1.5

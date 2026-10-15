@@ -268,7 +268,7 @@ if settings.startup["bobmods-assembly-furnaces"].value == true and data.raw.furn
       tint = { r = 0.6, g = 0.2, b = 0.8 },
       max_health = 450,
       module_slots = 4,
-      crafting_speed = 4.5,
+      crafting_speed = 6.75,
       energy_usage = "250kW",
     }),
 
@@ -278,7 +278,7 @@ if settings.startup["bobmods-assembly-furnaces"].value == true and data.raw.furn
       tint = { r = 0.2, g = 0.8, b = 0.2 },
       max_health = 550,
       module_slots = 6,
-      crafting_speed = 6,
+      crafting_speed = 9,
       energy_usage = "300kW",
     }),
 
