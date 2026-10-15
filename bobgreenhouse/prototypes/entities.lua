@@ -42,7 +42,7 @@ data:extend({
     dying_explosion = "medium-explosion",
     fast_replaceable_group = "bob-greenhouse",
     crafting_categories = { "bob-greenhouse" },
-    crafting_speed = 0.75,
+    crafting_speed = 1.125,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

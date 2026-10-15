@@ -255,7 +255,7 @@ if settings.startup["bobmods-assembly-chemicalplants"].value == true then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 1.75,
+      crafting_speed = 2.625,
       energy_usage = "260kW",
       energy_source = {
         type = "electric",
@@ -303,7 +303,7 @@ if settings.startup["bobmods-assembly-chemicalplants"].value == true then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 2.75,
+      crafting_speed = 4.125,
       energy_usage = "390kW",
       energy_source = {
         type = "electric",
@@ -351,7 +351,7 @@ if settings.startup["bobmods-assembly-chemicalplants"].value == true then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 3.5,
+      crafting_speed = 5.25,
       energy_usage = "480kW",
       energy_source = {
         type = "electric",

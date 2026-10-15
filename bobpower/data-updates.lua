@@ -121,3 +121,38 @@ if mods["quality"] then
     bobmods.lib.recipe.update_recycling_recipe_single("bob-hydrazine-generator", false)
   end
 end
+
+-- Power production at 150%. Boilers, heat sources and generators all scale, so building ratios stay the same.
+local function scale_energy(energy)
+  local amount, unit = energy:match("^([%d%.]+)(%a*W)$")
+  return tonumber(amount) * 1.5 .. unit
+end
+local vanilla_power = {
+  ["steam-engine"] = true,
+  ["steam-turbine"] = true,
+  ["boiler"] = true,
+  ["heat-exchanger"] = true,
+  ["nuclear-reactor"] = true,
+  ["heating-tower"] = true,
+  ["solar-panel"] = true,
+}
+for power_type, rate in pairs({
+  ["generator"] = "fluid_usage_per_tick",
+  ["boiler"] = "energy_consumption",
+  ["reactor"] = "consumption",
+  ["solar-panel"] = "production",
+  ["burner-generator"] = "max_power_output",
+}) do
+  for name, entity in pairs(data.raw[power_type]) do
+    if vanilla_power[name] or name:find("^bob%-") then
+      if type(entity[rate]) == "number" then
+        entity[rate] = entity[rate] * 1.5
+      else
+        entity[rate] = scale_energy(entity[rate])
+      end
+      if power_type == "generator" and entity.max_power_output then
+        entity.max_power_output = scale_energy(entity.max_power_output)
+      end
+    end
+  end
+end

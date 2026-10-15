@@ -44,3 +44,11 @@ if mods["quality"] then
     })
   end
 end
+
+-- Vanilla drills at 150% speed, matching the Bob tiers.
+for _, name in pairs({ "burner-mining-drill", "electric-mining-drill", "pumpjack", "big-mining-drill" }) do
+  local drill = data.raw["mining-drill"][name]
+  if drill then
+    drill.mining_speed = drill.mining_speed * 1.5
+  end
+end

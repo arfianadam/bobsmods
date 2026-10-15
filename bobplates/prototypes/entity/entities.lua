@@ -215,7 +215,7 @@ data:extend({
     icon_draw_specification = {
       shift = { 0, -0.3 },
     },
-    crafting_speed = 0.75,
+    crafting_speed = 1.125,
     energy_usage = "420kW",
     energy_source = {
       type = "electric",
@@ -269,7 +269,7 @@ data:extend({
     max_health = 200,
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["bob-stone-furnace"],
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     corpse = "medium-remnants",
     repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
@@ -446,7 +446,7 @@ data:extend({
     max_health = 300,
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["bob-steel-furnace"],
-    crafting_speed = 2,
+    crafting_speed = 3,
     corpse = "medium-remnants",
     repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
@@ -548,7 +548,7 @@ data:extend({
     icon_draw_specification = {
       shift = { 0, -0.1 },
     },
-    crafting_speed = 2,
+    crafting_speed = 3,
     crafting_categories = { "bob-chemical-furnace" },
     energy_usage = "180kW",
     energy_source = {
@@ -690,7 +690,7 @@ data:extend({
     },
     crafting_categories = { "smelting", "bob-mixing-furnace" },
     energy_usage = "90kW",
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     energy_source = {
       type = "burner",
       fuel_categories = { "chemical" },
@@ -765,7 +765,7 @@ data:extend({
     },
     crafting_categories = { "smelting", "bob-mixing-furnace" },
     energy_usage = "90kW",
-    crafting_speed = 2,
+    crafting_speed = 3,
     energy_source = {
       type = "burner",
       fuel_categories = { "chemical" },
@@ -816,7 +816,7 @@ data:extend({
     icon_draw_specification = {
       shift = { 0, -0.1 },
     },
-    crafting_speed = 2,
+    crafting_speed = 3,
     crafting_categories = { "smelting", "bob-mixing-furnace" },
     energy_usage = "180kW",
 
@@ -1197,7 +1197,7 @@ data:extend({
     collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     crafting_categories = { "bob-void-fluid" },
-    crafting_speed = 5,
+    crafting_speed = 7.5,
     result_inventory_size = 0,
     source_inventory_size = 0,
     graphics_set = {

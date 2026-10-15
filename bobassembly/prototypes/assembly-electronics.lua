@@ -153,7 +153,7 @@ if settings.startup["bobmods-assembly-electronicmachines"].value == true then
         idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       },
       crafting_categories = { "electronics", "electronics-with-fluid" },
-      crafting_speed = 1,
+      crafting_speed = 1.5,
       energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -328,7 +328,7 @@ if settings.startup["bobmods-assembly-electronicmachines"].value == true then
         idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       },
       crafting_categories = { "electronics", "electronics-with-fluid" },
-      crafting_speed = 2.25,
+      crafting_speed = 3.375,
       energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -509,7 +509,7 @@ if settings.startup["bobmods-assembly-electronicmachines"].value == true then
         idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       },
       crafting_categories = { "electronics", "electronics-with-fluid" },
-      crafting_speed = 4,
+      crafting_speed = 6,
       energy_source = {
         type = "electric",
         usage_priority = "secondary-input",

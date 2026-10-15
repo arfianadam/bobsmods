@@ -129,7 +129,7 @@ then
         usage_priority = "secondary-input",
       },
       energy_usage = "75kW",
-      researching_speed = 1.5,
+      researching_speed = 2.25,
       inputs = {
         "bob-science-pack-gold",
         "bob-alien-science-pack",

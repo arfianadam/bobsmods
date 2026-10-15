@@ -102,7 +102,7 @@ data:extend({
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     max_health = 150,
     crafting_categories = { "bob-air-pump" },
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     module_slots = 1,
     icons_positioning = {
       {
@@ -169,7 +169,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-air-pump" },
-    crafting_speed = 2,
+    crafting_speed = 3,
     module_slots = 2,
     icons_positioning = {
       {
@@ -236,7 +236,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-air-pump" },
-    crafting_speed = 3.5,
+    crafting_speed = 5.25,
     module_slots = 4,
     icons_positioning = {
       {
@@ -304,7 +304,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-air-pump" },
-    crafting_speed = 5,
+    crafting_speed = 7.5,
     module_slots = 6,
     icons_positioning = {
       {
@@ -371,7 +371,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-water-pump", "barrelling" },
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     module_slots = 1,
     icons_positioning = {
       {
@@ -438,7 +438,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-water-pump", "barrelling" },
-    crafting_speed = 2,
+    crafting_speed = 3,
     module_slots = 2,
     icons_positioning = {
       {
@@ -505,7 +505,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-water-pump", "barrelling" },
-    crafting_speed = 3.5,
+    crafting_speed = 5.25,
     module_slots = 4,
     icons_positioning = {
       {
@@ -573,7 +573,7 @@ data:extend({
     circuit_connector = circuit_connector_definitions["fluid-pump"],
     circuit_connector_flipped = circuit_connector_definitions["fluid-pump-flipped"],
     crafting_categories = { "bob-water-pump", "barrelling" },
-    crafting_speed = 5,
+    crafting_speed = 7.5,
     module_slots = 6,
     icons_positioning = {
       {

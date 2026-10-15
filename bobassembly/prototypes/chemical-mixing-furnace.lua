@@ -181,7 +181,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.1 },
       },
-      crafting_speed = 3,
+      crafting_speed = 4.5,
       crafting_categories = { "smelting", "bob-mixing-furnace", "bob-chemical-furnace" },
       energy_usage = "250kW",
       energy_source = {
@@ -286,7 +286,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.1 },
       },
-      crafting_speed = 4,
+      crafting_speed = 6,
       crafting_categories = { "smelting", "bob-mixing-furnace", "bob-chemical-furnace" },
       energy_usage = "300kW",
       energy_source = {

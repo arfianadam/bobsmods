@@ -443,7 +443,7 @@ if settings.startup["bobmods-plates-purewater"].value == true then
       collision_box = { { -0.7, -0.7 }, { 0.7, 0.7 } },
       selection_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
       crafting_categories = { "bob-distillery" },
-      crafting_speed = 1,
+      crafting_speed = 1.5,
       source_inventory_size = 0,
       result_inventory_size = 0,
       energy_usage = "120kW",

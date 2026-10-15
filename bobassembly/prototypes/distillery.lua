@@ -172,7 +172,7 @@ then
           animation = bobmods.plates.distillery_animation_flipped({ r = 0.7, g = 0.2, b = 0.1 }),
           working_visualisations = bobmods.plates.distillery_working_visualisations_flipped(1.5),
         },
-        crafting_speed = 1.5,
+        crafting_speed = 2.25,
         energy_usage = "163kW",
         module_slots = 2,
         next_upgrade = "bob-distillery-3",
@@ -193,7 +193,7 @@ then
           animation = bobmods.plates.distillery_animation_flipped({ r = 0.1, g = 0.5, b = 0.7 }),
           working_visualisations = bobmods.plates.distillery_working_visualisations_flipped(2.1),
         },
-        crafting_speed = 2.1,
+        crafting_speed = 3.15,
         energy_usage = "205kW",
         module_slots = 3,
         icons_positioning = {
@@ -223,7 +223,7 @@ then
           animation = bobmods.plates.distillery_animation_flipped({ r = 0.7, g = 0.1, b = 0.7 }),
           working_visualisations = bobmods.plates.distillery_working_visualisations_flipped(2.8),
         },
-        crafting_speed = 2.8,
+        crafting_speed = 4.2,
         energy_usage = "242kW",
         module_slots = 4,
         icons_positioning = {
@@ -253,7 +253,7 @@ then
           animation = bobmods.plates.distillery_animation_flipped({ r = 0.1, g = 0.7, b = 0.1 }),
           working_visualisations = bobmods.plates.distillery_working_visualisations_flipped(3.5),
         },
-        crafting_speed = 3.5,
+        crafting_speed = 5.25,
         energy_usage = "270kW",
         module_slots = 5,
         icons_positioning = {

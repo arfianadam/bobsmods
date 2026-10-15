@@ -72,3 +72,11 @@ data:extend({
     weight = 20000,
   },
 })
+
+for tier = 2, 3 do
+  local offshore_pump = table.deepcopy(data.raw.item["offshore-pump"])
+  offshore_pump.name = "bob-offshore-pump-" .. tier
+  offshore_pump.place_result = offshore_pump.name
+  offshore_pump.order = "b[fluids]-a[offshore-pump]-" .. tier
+  data:extend({ offshore_pump })
+end

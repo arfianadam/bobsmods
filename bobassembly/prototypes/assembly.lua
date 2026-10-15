@@ -171,7 +171,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
     },
     crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid" },
-    crafting_speed = 2,
+    crafting_speed = 3,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
@@ -352,7 +352,7 @@ data:extend({
       },
     },
     crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid" },
-    crafting_speed = 2.75,
+    crafting_speed = 4.125,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
@@ -540,7 +540,7 @@ data:extend({
       },
     },
     crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid" },
-    crafting_speed = 3.5,
+    crafting_speed = 5.25,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

@@ -45,7 +45,7 @@ if settings.startup["bobmods-mining-steamminingdrills"].value == true then
         minable = { mining_time = 0.3, result = "bob-steam-mining-drill" },
         max_health = 200,
         energy_usage = "600kW",
-        mining_speed = 2,
+        mining_speed = 3,
       },
     }),
   })

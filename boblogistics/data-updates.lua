@@ -13,6 +13,20 @@ require("prototypes.aai-updates")
 -- Allow burner inserters to fuel themselves from the burner inventory of a machine they're pulling items out of.
 data.raw.inserter["burner-inserter"].allow_burner_leech = true
 
+-- Vanilla inserters at 150% speed. With the overhaul on, the others already use the scaled stats table.
+local vanilla_inserters = { "burner-inserter", "stack-inserter" }
+if settings.startup["bobmods-logistics-inserteroverhaul"].value == false then
+  vanilla_inserters =
+    { "burner-inserter", "stack-inserter", "inserter", "long-handed-inserter", "fast-inserter", "bulk-inserter" }
+end
+for _, name in pairs(vanilla_inserters) do
+  local vanilla_inserter = data.raw.inserter[name]
+  if vanilla_inserter then
+    vanilla_inserter.rotation_speed = vanilla_inserter.rotation_speed * 1.5
+    vanilla_inserter.extension_speed = vanilla_inserter.extension_speed * 1.5
+  end
+end
+
 if settings.startup["bobmods-logistics-trains"].value == true then
   if data.raw["damage-type"]["bob-pierce"] then
     table.insert(data.raw.locomotive["locomotive"].resistances, { type = "bob-pierce", decrease = 5, percent = 25 })
@@ -205,6 +219,8 @@ if mods["quality"] then
     "bob-logistic-zone-expander-2",
     "bob-logistic-zone-expander-3",
     "bob-logistic-zone-expander-4",
+    "bob-offshore-pump-2",
+    "bob-offshore-pump-3",
     "bob-passive-provider-chest-2",
     "bob-passive-provider-chest-3",
     "bob-pump-2",

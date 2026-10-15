@@ -23,14 +23,34 @@ bobpump4.energy_usage = "75kW"
 bobpump4.circuit_wire_max_distance = 15
 
 if mods["quality"] then
-  data.raw.pump.pump.pumping_speed = 10
-  bobpump2.pumping_speed = 20
-  bobpump3.pumping_speed = 30
-  bobpump4.pumping_speed = 40
+  data.raw.pump.pump.pumping_speed = 15
+  bobpump2.pumping_speed = 30
+  bobpump3.pumping_speed = 45
+  bobpump4.pumping_speed = 60
 else
-  bobpump2.pumping_speed = 40
-  bobpump3.pumping_speed = 60
-  bobpump4.pumping_speed = 80
+  data.raw.pump.pump.pumping_speed = 30
+  bobpump2.pumping_speed = 60
+  bobpump3.pumping_speed = 90
+  bobpump4.pumping_speed = 120
 end
 
 data:extend({ bobpump2, bobpump3, bobpump4 })
+
+data.raw["offshore-pump"]["offshore-pump"].pumping_speed = 30
+data.raw["offshore-pump"]["offshore-pump"].next_upgrade = "bob-offshore-pump-2"
+
+local boboffshorepump2 = table.deepcopy(data.raw["offshore-pump"]["offshore-pump"])
+boboffshorepump2.name = "bob-offshore-pump-2"
+boboffshorepump2.minable.result = "bob-offshore-pump-2"
+boboffshorepump2.max_health = 200
+boboffshorepump2.next_upgrade = "bob-offshore-pump-3"
+boboffshorepump2.pumping_speed = 60
+
+local boboffshorepump3 = table.deepcopy(data.raw["offshore-pump"]["offshore-pump"])
+boboffshorepump3.name = "bob-offshore-pump-3"
+boboffshorepump3.minable.result = "bob-offshore-pump-3"
+boboffshorepump3.max_health = 250
+boboffshorepump3.next_upgrade = nil
+boboffshorepump3.pumping_speed = 90
+
+data:extend({ boboffshorepump2, boboffshorepump3 })

@@ -21,6 +21,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "bob-pump-2",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "bob-offshore-pump-2",
+      },
     },
     unit = {
       count = 50,
@@ -55,6 +59,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "bob-pump-3",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "bob-offshore-pump-3",
       },
     },
     unit = {

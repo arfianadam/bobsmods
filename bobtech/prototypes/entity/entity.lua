@@ -122,7 +122,7 @@ data:extend({
       usage_priority = "secondary-input",
     },
     energy_usage = "75kW",
-    researching_speed = 2,
+    researching_speed = 3,
     inputs = {
       "automation-science-pack",
       "logistic-science-pack",
@@ -289,7 +289,7 @@ if settings.startup["bobmods-burnerphase"].value == true then
         },
       },
       energy_usage = "90kW",
-      researching_speed = 0.75,
+      researching_speed = 1.125,
       inputs = {},
       icons_positioning = {
         {

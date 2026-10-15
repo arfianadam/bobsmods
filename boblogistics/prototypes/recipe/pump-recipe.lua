@@ -35,4 +35,28 @@ data:extend({
     },
     results = { { type = "item", name = "bob-pump-4", amount = 1 } },
   },
+  {
+    type = "recipe",
+    name = "bob-offshore-pump-2",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      { type = "item", name = "offshore-pump", amount = 1 },
+      { type = "item", name = "steel-plate", amount = 1 },
+      { type = "item", name = "pipe", amount = 1 },
+    },
+    results = { { type = "item", name = "bob-offshore-pump-2", amount = 1 } },
+  },
+  {
+    type = "recipe",
+    name = "bob-offshore-pump-3",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      { type = "item", name = "bob-offshore-pump-2", amount = 1 },
+      { type = "item", name = "steel-plate", amount = 1 },
+      { type = "item", name = "pipe", amount = 1 },
+    },
+    results = { { type = "item", name = "bob-offshore-pump-3", amount = 1 } },
+  },
 })
