@@ -65,6 +65,10 @@ end
 
 for _, roboport in pairs(data.raw["roboport-equipment"]) do
   roboport.charging_energy = scale_energy(roboport.charging_energy)
+  roboport.construction_radius = scale_count(roboport.construction_radius)
+  if roboport.charging_station_count then
+    roboport.charging_station_count = scale_count(roboport.charging_station_count)
+  end
   if roboport.robot_limit then
     roboport.robot_limit = scale_count(roboport.robot_limit)
   end
