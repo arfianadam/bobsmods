@@ -53,9 +53,28 @@ for _, pole in pairs(data.raw["electric-pole"]) do
   pole.supply_area_distance = math.floor(pole.supply_area_distance * 1.5 - grid_offset + 0.5) + grid_offset
 end
 
+for _, panel in pairs(data.raw["solar-panel-equipment"]) do
+  panel.power = scale_energy(panel.power)
+end
+
 for _, battery_type in pairs({ "accumulator", "battery-equipment" }) do
   for _, battery in pairs(data.raw[battery_type]) do
     battery.energy_source.buffer_capacity = scale_energy(battery.energy_source.buffer_capacity)
+  end
+end
+
+for _, roboport in pairs(data.raw["roboport-equipment"]) do
+  roboport.charging_energy = scale_energy(roboport.charging_energy)
+  if roboport.robot_limit then
+    roboport.robot_limit = scale_count(roboport.robot_limit)
+  end
+  local energy_source = roboport.energy_source
+  if energy_source.buffer_capacity then
+    energy_source.buffer_capacity = scale_energy(energy_source.buffer_capacity)
+  end
+  -- Faster charging draws more power, so the grid feed has to keep up.
+  if energy_source.input_flow_limit then
+    energy_source.input_flow_limit = scale_energy(energy_source.input_flow_limit)
   end
 end
 
