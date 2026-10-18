@@ -86,5 +86,9 @@ for _, robot_type in pairs({ "logistic-robot", "construction-robot" }) do
   for _, robot in pairs(data.raw[robot_type]) do
     robot.max_payload_size = scale_count(robot.max_payload_size)
     robot.max_energy = scale_energy(robot.max_energy)
+    robot.speed = robot.speed * 1.5
+    if robot.max_speed then
+      robot.max_speed = robot.max_speed * 1.5
+    end
   end
 end
