@@ -6,9 +6,9 @@ end
 local function scale_count(count)
   return math.floor(count * 1.5 + 0.5)
 end
-local function scale_energy(energy)
+local function scale_energy(energy, factor)
   local amount, unit = energy:match("^([%d%.]+)(%a*[JW])$")
-  return tonumber(amount) * 1.5 .. unit
+  return tonumber(amount) * (factor or 1.5) .. unit
 end
 
 -- Stacks of 1 stay 1: armor, blueprints and remotes can't stack.
@@ -79,6 +79,49 @@ for _, roboport in pairs(data.raw["roboport-equipment"]) do
   -- Faster charging draws more power, so the grid feed has to keep up.
   if energy_source.input_flow_limit then
     energy_source.input_flow_limit = scale_energy(energy_source.input_flow_limit)
+  end
+end
+
+-- Radius 1 marks chest-sized ports (robochest, charge port) meant to cover only themselves.
+local function scale_radius(radius)
+  return radius > 1 and radius * 1.5 or radius
+end
+for _, roboport in pairs(data.raw["roboport"]) do
+  roboport.logistics_radius = scale_radius(roboport.logistics_radius)
+  roboport.construction_radius = scale_radius(roboport.construction_radius)
+  if roboport.logistics_connection_distance then -- must stay >= logistics_radius
+    roboport.logistics_connection_distance = scale_radius(roboport.logistics_connection_distance)
+  end
+  roboport.robot_slots_count = scale_count(roboport.robot_slots_count)
+  roboport.material_slots_count = scale_count(roboport.material_slots_count)
+  roboport.charging_energy = scale_energy(roboport.charging_energy)
+
+  -- Pads round down: a single pad has no neighbour to add one beside, so it stays 1.
+  local pad_ratio = 1
+  local pads = roboport.charging_offsets
+  if (roboport.charging_station_count or 0) > 0 then
+    local count = roboport.charging_station_count
+    roboport.charging_station_count = math.floor(count * 1.5)
+    pad_ratio = roboport.charging_station_count / count
+  elseif pads and #pads > 1 then
+    local count = #pads
+    local extra = math.floor(count * 1.5) - count
+    -- New pads go halfway between neighbouring ones, spread around the list.
+    for k = 0, extra - 1 do
+      local i = math.floor(k * count / extra) + 1
+      local a, b = pads[i], pads[i % count + 1]
+      table.insert(pads, { ((a.x or a[1]) + (b.x or b[1])) / 2, ((a.y or a[2]) + (b.y or b[2])) / 2 })
+    end
+    pad_ratio = #pads / count
+  end
+
+  local energy_source = roboport.energy_source
+  if energy_source.buffer_capacity then
+    energy_source.buffer_capacity = scale_energy(energy_source.buffer_capacity)
+  end
+  -- More pads, each charging faster: the grid feed has to cover both.
+  if energy_source.input_flow_limit then
+    energy_source.input_flow_limit = scale_energy(energy_source.input_flow_limit, 1.5 * pad_ratio)
   end
 end
 
