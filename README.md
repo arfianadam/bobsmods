@@ -8,6 +8,7 @@ Symlink each mod folder from this repository into your Factorio `mods` folder wi
 The `mods` folder must already exist: launch Factorio once before installing.
 
 `bobplates`, `bobelectronics` and `bobclasses` are left out on purpose.
+`bobcutpaste` is not part of Bob's Mods: it makes cut and paste (Ctrl+X) keep building contents.
 
 > **Note:** first remove any other copy of these mods from `mods`, such as a `bobores_2.1.2` folder
 > or a `bobores_2.1.2.zip` from the mod portal. Factorio won't start with two copies of the same mod.
@@ -16,7 +17,7 @@ The `mods` folder must already exist: launch Factorio once before installing.
 git clone https://github.com/arfianadam/bobsmods.git
 cd bobsmods
 MODS="$HOME/.factorio/mods" # macOS: MODS="$HOME/Library/Application Support/factorio/mods"
-for mod in bobassembly bobenemies bobequipment bobgreenhouse bobinserters boblibrary boblogistics \
+for mod in bobassembly bobcutpaste bobenemies bobequipment bobgreenhouse bobinserters boblibrary boblogistics \
   bobmining bobmodules bobores bobpower bobrevamp bobtech bobvehicleequipment bobwarfare; do
   ln -sfn "$PWD/$mod" "$MODS/$mod"
 done

@@ -1,0 +1,11 @@
+{
+  "name": "bobcutpaste",
+  "version": "2.0.3",
+  "factorio_version": "2.0",
+  "title": "Cut and Paste Contents",
+  "author": "Arfian Adam",
+  "contact": "",
+  "homepage": "",
+  "dependencies": ["base >= 2.0.0"],
+  "description": "Cut and paste (Ctrl+X) keeps building contents: items in chests, furnaces, assemblers, turrets and wagons, fluid in tanks, pipes and machines, and the item in an inserter's hand all end up in the pasted copy instead of going off with the robots.\n\nModules are left to the blueprint as usual. Belt contents are not moved."
+}
