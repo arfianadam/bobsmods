@@ -329,3 +329,5 @@ if mods["quality"] then
     },
   }
 end
+
+require("prototypes.lane-splitter")
