@@ -414,7 +414,119 @@ script.on_event(defines.events.on_gui_checked_state_changed, function(event)
   end
 end)
 
+-- Each underground channel is a copy named "<underground>-channel-<n>", see prototypes/underground-channels.lua.
+-- Returns the channel 1 name and the channel of an underground that has channels.
+function bobmods.logistics.underground_channel(entity)
+  if entity.type ~= "underground-belt" then
+    return nil
+  end
+  local base, channel = string.match(entity.name, "^(.+)%-channel%-(%d+)$")
+  base = base or entity.name
+  if prototypes.entity[base .. "-channel-2"] then
+    return base, tonumber(channel) or 1
+  end
+end
+
+-- The player's own underground with channels under the cursor, with its channel 1 name and channel.
+function bobmods.logistics.selected_underground(player)
+  local entity = player.selected
+  if entity and entity.force == player.force then
+    local base, channel = bobmods.logistics.underground_channel(entity)
+    if base then
+      return entity, base, channel
+    end
+  end
+end
+
+function bobmods.logistics.open_underground_channel_gui(player, entity)
+  local base, current = bobmods.logistics.underground_channel(entity)
+  if player.gui.screen.bob_underground_channel then
+    player.gui.screen.bob_underground_channel.destroy()
+  end
+  local frame = player.gui.screen.add({
+    type = "frame",
+    name = "bob_underground_channel",
+    caption = { "gui.bob-underground-channel" },
+    tags = { surface = entity.surface.index, position = entity.position, name = entity.name },
+  })
+  local flow = frame.add({ type = "flow" })
+  local channel = 1
+  while channel == 1 or prototypes.entity[base .. "-channel-" .. channel] do
+    local button = flow.add({
+      type = "button",
+      caption = tostring(channel),
+      tags = { bob_underground_channel = channel },
+      enabled = channel ~= current,
+    })
+    button.style.minimal_width = 40
+    channel = channel + 1
+  end
+  frame.force_auto_center()
+  player.opened = frame
+end
+
+-- Swapping the prototype makes the game re-pair this underground with undergrounds of the new channel.
+function bobmods.logistics.set_underground_channel(entity, channel)
+  local base = bobmods.logistics.underground_channel(entity)
+  return entity.surface.create_entity({
+    name = channel == 1 and base or base .. "-channel-" .. channel,
+    position = entity.position,
+    direction = entity.direction,
+    quality = entity.quality,
+    force = entity.force,
+    type = entity.belt_to_ground_type,
+    fast_replace = true,
+    spill = false,
+    raise_built = true,
+  })
+end
+
+script.on_event("bob-underground-channel", function(event)
+  local player = game.get_player(event.player_index)
+  local entity = bobmods.logistics.selected_underground(player)
+  if entity and player.is_cursor_empty() then
+    bobmods.logistics.open_underground_channel_gui(player, entity)
+  end
+end)
+
+-- Undergrounds have no settings, so the game's own copy and paste does nothing on them.
+script.on_event("bob-underground-channel-copy", function(event)
+  local player = game.get_player(event.player_index)
+  if player.selected then
+    -- Copying anything else forgets the channel, so pasting those settings doesn't also change undergrounds.
+    local _, _, channel = bobmods.logistics.selected_underground(player)
+    storage.underground_channel_copy = storage.underground_channel_copy or {}
+    storage.underground_channel_copy[player.index] = channel
+  end
+end)
+
+script.on_event("bob-underground-channel-paste", function(event)
+  local player = game.get_player(event.player_index)
+  local entity, _, current = bobmods.logistics.selected_underground(player)
+  local channel = storage.underground_channel_copy and storage.underground_channel_copy[player.index]
+  if entity and channel and channel ~= current and player.is_cursor_empty() then
+    bobmods.logistics.set_underground_channel(entity, channel)
+  end
+end)
+
+script.on_event(defines.events.on_gui_closed, function(event)
+  if event.element and event.element.valid and event.element.name == "bob_underground_channel" then
+    event.element.destroy()
+  end
+end)
+
 script.on_event(defines.events.on_gui_click, function(event)
+  local channel = event.element.valid and event.element.tags.bob_underground_channel
+  if channel then
+    local frame = event.element.parent.parent
+    local surface = game.get_surface(frame.tags.surface)
+    local entity = surface and surface.find_entity(frame.tags.name, frame.tags.position)
+    if entity then
+      bobmods.logistics.set_underground_channel(entity, channel)
+    end
+    frame.destroy()
+  end
+
   if not script.active_mods["bobinserters"] then
     if event.element.valid and event.element.name == "bob_logistics_inserter_button" then
       if storage.bobmods.logistics[event.player_index].show then

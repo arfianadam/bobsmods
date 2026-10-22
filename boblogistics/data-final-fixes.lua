@@ -60,3 +60,5 @@ if mods["space-age"] then
   end
   bobmods.lib.tech.hide("turbo-transport-belt")
 end
+
+require("prototypes.underground-channels")
