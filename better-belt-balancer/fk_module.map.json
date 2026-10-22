@@ -1,0 +1,1760 @@
+{
+  "fklua_map": 1,
+  "module": "fk_module.lua",
+  "functions": [
+    {
+      "lua": [
+        3055,
+        3057
+      ],
+      "wasm": 8,
+      "name": "__wasm_call_ctors"
+    },
+    {
+      "lua": [
+        3059,
+        3063
+      ],
+      "wasm": 9,
+      "name": "tinygo_getCurrentStackPointer"
+    },
+    {
+      "lua": [
+        3065,
+        3067
+      ],
+      "wasm": 10,
+      "name": "memcpy",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memcpy.c",
+      "line": 5
+    },
+    {
+      "lua": [
+        3069,
+        3225
+      ],
+      "wasm": 11,
+      "name": "memmove",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memmove.c",
+      "line": 9
+    },
+    {
+      "lua": [
+        3227,
+        3229
+      ],
+      "wasm": 12,
+      "name": "memset",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memset.c",
+      "line": 4
+    },
+    {
+      "lua": [
+        3231,
+        3280
+      ],
+      "wasm": 13,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkArenaMark#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 963
+    },
+    {
+      "lua": [
+        3282,
+        3331
+      ],
+      "wasm": 14,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkArenaRelease#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 971
+    },
+    {
+      "lua": [
+        3333,
+        3353
+      ],
+      "wasm": 15,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkScratchBase#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1452
+    },
+    {
+      "lua": [
+        3355,
+        3375
+      ],
+      "wasm": 16,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkScratchSize#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1455
+    },
+    {
+      "lua": [
+        3377,
+        3404
+      ],
+      "wasm": 17,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkAlloc#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1458
+    },
+    {
+      "lua": [
+        3406,
+        3706
+      ],
+      "wasm": 18,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.arenaAlloc",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 878
+    },
+    {
+      "lua": [
+        3708,
+        3920
+      ],
+      "wasm": 19,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkAllocStatic#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1469
+    },
+    {
+      "lua": [
+        3922,
+        4070
+      ],
+      "wasm": 20,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.allocLarge",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 787
+    },
+    {
+      "lua": [
+        4072,
+        4149
+      ],
+      "wasm": 21,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.nextRun",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 710
+    },
+    {
+      "lua": [
+        4151,
+        4170
+      ],
+      "wasm": 22,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkFree#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1490
+    },
+    {
+      "lua": [
+        4172,
+        4191
+      ],
+      "wasm": 23,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkAPIPin#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1511
+    },
+    {
+      "lua": [
+        4193,
+        4212
+      ],
+      "wasm": 24,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.fkAPISig#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1522
+    },
+    {
+      "lua": [
+        4214,
+        4689
+      ],
+      "wasm": 25,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.writeDyn",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1396
+    },
+    {
+      "lua": [
+        4691,
+        5727
+      ],
+      "wasm": 26,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.readDyn",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 1356
+    },
+    {
+      "lua": [
+        5729,
+        5814
+      ],
+      "wasm": 27,
+      "name": "runtime.stringFromBytes",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/string.go",
+      "line": 71
+    },
+    {
+      "lua": [
+        5816,
+        5883
+      ],
+      "wasm": 28,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.getStr"
+    },
+    {
+      "lua": [
+        5885,
+        6076
+      ],
+      "wasm": 29,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaControl).GetItemCount",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 8543
+    },
+    {
+      "lua": [
+        6078,
+        6392
+      ],
+      "wasm": 30,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaCustomTable).Get",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 11679
+    },
+    {
+      "lua": [
+        6394,
+        6608
+      ],
+      "wasm": 31,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).Destroy",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 13096
+    },
+    {
+      "lua": [
+        6610,
+        6791
+      ],
+      "wasm": 32,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).Name",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 20355
+    },
+    {
+      "lua": [
+        6793,
+        6944
+      ],
+      "wasm": 33,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).NameIs"
+    },
+    {
+      "lua": [
+        6946,
+        7036
+      ],
+      "wasm": 34,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).SetGraphicsVariation"
+    },
+    {
+      "lua": [
+        7038,
+        7124
+      ],
+      "wasm": 35,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).SetHealth",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 18796
+    },
+    {
+      "lua": [
+        7126,
+        7307
+      ],
+      "wasm": 36,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).Type",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 23711
+    },
+    {
+      "lua": [
+        7309,
+        7461
+      ],
+      "wasm": 37,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntity).TypeIs"
+    },
+    {
+      "lua": [
+        7463,
+        7673
+      ],
+      "wasm": 38,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaEntityPrototype).MaxUndergroundDistance",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 31417
+    },
+    {
+      "lua": [
+        7675,
+        7767
+      ],
+      "wasm": 39,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaForce).SetSurfaceHidden"
+    },
+    {
+      "lua": [
+        7769,
+        7982
+      ],
+      "wasm": 40,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaGameScript).GetPlayer",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 44223
+    },
+    {
+      "lua": [
+        7984,
+        8197
+      ],
+      "wasm": 41,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaGameScript).GetSurface",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 44291
+    },
+    {
+      "lua": [
+        8199,
+        8377
+      ],
+      "wasm": 42,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaPlayer).CreateLocalFlyingText",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 63468
+    },
+    {
+      "lua": [
+        8379,
+        8514
+      ],
+      "wasm": 43,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaPlayer).ForceIndex",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 101758
+    },
+    {
+      "lua": [
+        8516,
+        8667
+      ],
+      "wasm": 44,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaQualityPrototype).NameIs"
+    },
+    {
+      "lua": [
+        8669,
+        9037
+      ],
+      "wasm": 45,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.EntitySearchFilters).encodeAt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 122421
+    },
+    {
+      "lua": [
+        9039,
+        9252
+      ],
+      "wasm": 46,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaSurface).CreateEntity",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 86998
+    },
+    {
+      "lua": [
+        9254,
+        9525
+      ],
+      "wasm": 47,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaSurface).FindEntitiesFiltered",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 87595
+    },
+    {
+      "lua": [
+        9527,
+        9804
+      ],
+      "wasm": 48,
+      "name": "(github.com/Techrocket9/BetterBeltBalancer/guest/go/fkapi.LuaSurface).FindEntitiesFilteredInto",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fkapi/fkapi.go",
+      "line": 87621
+    },
+    {
+      "lua": [
+        9806,
+        10006
+      ],
+      "wasm": 49,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/plan.ShapeEdges",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/plan/plan.go",
+      "line": 289
+    },
+    {
+      "lua": [
+        10008,
+        11167
+      ],
+      "wasm": 50,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/plan.stagesAt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/plan/plan.go",
+      "line": 485
+    },
+    {
+      "lua": [
+        11169,
+        13826
+      ],
+      "wasm": 51,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/plan.Build",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/plan/plan.go",
+      "line": 537
+    },
+    {
+      "lua": [
+        13828,
+        14563
+      ],
+      "wasm": 52,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/plan.subAt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/plan/plan.go",
+      "line": 717
+    },
+    {
+      "lua": [
+        14565,
+        15124
+      ],
+      "wasm": 53,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/plan.Reinsertable",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/plan/plan.go",
+      "line": 1007
+    },
+    {
+      "lua": [
+        15126,
+        15169
+      ],
+      "wasm": 54,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/skin.Variation"
+    },
+    {
+      "lua": [
+        15171,
+        15195
+      ],
+      "wasm": 55,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.fkGCStep#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1702
+    },
+    {
+      "lua": [
+        15197,
+        15588
+      ],
+      "wasm": 56,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.step",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 549
+    },
+    {
+      "lua": [
+        15590,
+        15610
+      ],
+      "wasm": 57,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.fkGCDirtyBase#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1705
+    },
+    {
+      "lua": [
+        15612,
+        15632
+      ],
+      "wasm": 58,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.fkGCDirtyCap#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1708
+    },
+    {
+      "lua": [
+        15634,
+        16320
+      ],
+      "wasm": 59,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.markStep",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 709
+    },
+    {
+      "lua": [
+        16322,
+        17227
+      ],
+      "wasm": 60,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.sweepStep",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1469
+    },
+    {
+      "lua": [
+        17229,
+        17249
+      ],
+      "wasm": 61,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.warnRootBudget",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1186
+    },
+    {
+      "lua": [
+        17251,
+        17427
+      ],
+      "wasm": 62,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.markCandidate",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1191
+    },
+    {
+      "lua": [
+        17429,
+        17604
+      ],
+      "wasm": 63,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.rescanSpan",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1022
+    },
+    {
+      "lua": [
+        17606,
+        17818
+      ],
+      "wasm": 64,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.drainGray",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1286
+    },
+    {
+      "lua": [
+        17820,
+        17950
+      ],
+      "wasm": 65,
+      "name": "runtime.markRoots",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 44
+    },
+    {
+      "lua": [
+        17952,
+        18134
+      ],
+      "wasm": 66,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.beginSweep",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 1418
+    },
+    {
+      "lua": [
+        18136,
+        18140
+      ],
+      "wasm": 67,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.zero",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1099
+    },
+    {
+      "lua": [
+        18142,
+        18153
+      ],
+      "wasm": 68,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.wipe",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1116
+    },
+    {
+      "lua": [
+        18155,
+        18162
+      ],
+      "wasm": 69,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.logString",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1134
+    },
+    {
+      "lua": [
+        18164,
+        18463
+      ],
+      "wasm": 70,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.allocSpans",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 868
+    },
+    {
+      "lua": [
+        18465,
+        18474
+      ],
+      "wasm": 71,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.oom",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1233
+    },
+    {
+      "lua": [
+        18476,
+        18628
+      ],
+      "wasm": 72,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.refill",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 755
+    },
+    {
+      "lua": [
+        18630,
+        18768
+      ],
+      "wasm": 73,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.findSpanRun",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 952
+    },
+    {
+      "lua": [
+        18770,
+        19332
+      ],
+      "wasm": 74,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.growCoverage",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/meta.go",
+      "line": 211
+    },
+    {
+      "lua": [
+        19334,
+        19442
+      ],
+      "wasm": 75,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.growHeap",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1026
+    },
+    {
+      "lua": [
+        19444,
+        19464
+      ],
+      "wasm": 76,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.warnOutrun",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1155
+    },
+    {
+      "lua": [
+        19466,
+        19470
+      ],
+      "wasm": 77,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.warnGrowRefused",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/heap.go",
+      "line": 1206
+    },
+    {
+      "lua": [
+        19472,
+        19682
+      ],
+      "wasm": 78,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkgc.startCollection",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkgc/collect.go",
+      "line": 472
+    },
+    {
+      "lua": [
+        19684,
+        19753
+      ],
+      "wasm": 79,
+      "name": "fminimum",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 60
+    },
+    {
+      "lua": [
+        19755,
+        19784
+      ],
+      "wasm": 80,
+      "name": "fminimumf",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 65
+    },
+    {
+      "lua": [
+        19786,
+        19857
+      ],
+      "wasm": 81,
+      "name": "fmaximum",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 70
+    },
+    {
+      "lua": [
+        19859,
+        19890
+      ],
+      "wasm": 82,
+      "name": "fmaximumf",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 75
+    },
+    {
+      "lua": [
+        19892,
+        21791
+      ],
+      "wasm": 83,
+      "name": "_initialize",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/runtime_wasmentry.go",
+      "line": 28
+    },
+    {
+      "lua": [
+        21793,
+        21901
+      ],
+      "wasm": 84,
+      "name": "runtime.sliceAppend"
+    },
+    {
+      "lua": [
+        21903,
+        21995
+      ],
+      "wasm": 85,
+      "name": "runtime.hash32"
+    },
+    {
+      "lua": [
+        21997,
+        22173
+      ],
+      "wasm": 86,
+      "name": "runtime.hashmapMake",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/hashmap.go",
+      "line": 63
+    },
+    {
+      "lua": [
+        22175,
+        22219
+      ],
+      "wasm": 87,
+      "name": "runtime.memequal",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/runtime.go",
+      "line": 78
+    },
+    {
+      "lua": [
+        22221,
+        23014
+      ],
+      "wasm": 88,
+      "name": "runtime.hashmapSet",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/hashmap.go",
+      "line": 209
+    },
+    {
+      "lua": [
+        23016,
+        23570
+      ],
+      "wasm": 89,
+      "name": "runtime.hashmapNext",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/hashmap.go",
+      "line": 392
+    },
+    {
+      "lua": [
+        23572,
+        23724
+      ],
+      "wasm": 90,
+      "name": "runtime.hashmapGet"
+    },
+    {
+      "lua": [
+        23726,
+        23922
+      ],
+      "wasm": 91,
+      "name": "runtime.hashmapBinaryGet"
+    },
+    {
+      "lua": [
+        23924,
+        24493
+      ],
+      "wasm": 92,
+      "name": "runtime.hashmapBinaryDelete",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/hashmap.go",
+      "line": 486
+    },
+    {
+      "lua": [
+        24495,
+        25513
+      ],
+      "wasm": 93,
+      "name": "main.onCall#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/commands.go",
+      "line": 144
+    },
+    {
+      "lua": [
+        25515,
+        25734
+      ],
+      "wasm": 94,
+      "name": "main.writeGlobalBool",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/globalsetting.go",
+      "line": 79
+    },
+    {
+      "lua": [
+        25736,
+        25877
+      ],
+      "wasm": 95,
+      "name": "main.stackCapable",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 178
+    },
+    {
+      "lua": [
+        25879,
+        27117
+      ],
+      "wasm": 96,
+      "name": "main.auditAll",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 1028
+    },
+    {
+      "lua": [
+        27119,
+        29076
+      ],
+      "wasm": 97,
+      "name": "main.setPartPriority",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 370
+    },
+    {
+      "lua": [
+        29078,
+        29152
+      ],
+      "wasm": 98,
+      "name": "main.onInit#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 263
+    },
+    {
+      "lua": [
+        29154,
+        29426
+      ],
+      "wasm": 99,
+      "name": "main.readGlobalBool",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/globalsetting.go",
+      "line": 43
+    },
+    {
+      "lua": [
+        29428,
+        31605
+      ],
+      "wasm": 100,
+      "name": "main.legacyGate",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 180
+    },
+    {
+      "lua": [
+        31607,
+        31648
+      ],
+      "wasm": 101,
+      "name": "main.onConfigurationChanged#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 308
+    },
+    {
+      "lua": [
+        31650,
+        36899
+      ],
+      "wasm": 102,
+      "name": "main.rebuildFromWorld",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 552
+    },
+    {
+      "lua": [
+        36901,
+        37081
+      ],
+      "wasm": 103,
+      "name": "main.onMigrate#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 339
+    },
+    {
+      "lua": [
+        37083,
+        37103
+      ],
+      "wasm": 104,
+      "name": "main.stateVersionOf#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 368
+    },
+    {
+      "lua": [
+        37105,
+        37300
+      ],
+      "wasm": 105,
+      "name": "main.onDeferred#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 386
+    },
+    {
+      "lua": [
+        37302,
+        48761
+      ],
+      "wasm": 106,
+      "name": "main.flush",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1947
+    },
+    {
+      "lua": [
+        48763,
+        56705
+      ],
+      "wasm": 107,
+      "name": "main.onEvent#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 418
+    },
+    {
+      "lua": [
+        56707,
+        57286
+      ],
+      "wasm": 108,
+      "name": "main.onUndo",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 744
+    },
+    {
+      "lua": [
+        57288,
+        58929
+      ],
+      "wasm": 109,
+      "name": "main.reconcileArea",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 89
+    },
+    {
+      "lua": [
+        58931,
+        59645
+      ],
+      "wasm": 110,
+      "name": "main.onSurfaceGoing",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 822
+    },
+    {
+      "lua": [
+        59647,
+        59896
+      ],
+      "wasm": 111,
+      "name": "main.onSurfaceGone",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 834
+    },
+    {
+      "lua": [
+        59898,
+        61068
+      ],
+      "wasm": 112,
+      "name": "main.onForcesMerged",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 348
+    },
+    {
+      "lua": [
+        61070,
+        61334
+      ],
+      "wasm": 113,
+      "name": "main.tileOfEntity",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 317
+    },
+    {
+      "lua": [
+        61336,
+        61387
+      ],
+      "wasm": 114,
+      "name": "main.find"
+    },
+    {
+      "lua": [
+        61389,
+        61528
+      ],
+      "wasm": 115,
+      "name": "main.markLive",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1853
+    },
+    {
+      "lua": [
+        61530,
+        61805
+      ],
+      "wasm": 116,
+      "name": "main.maskAt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/skin.go",
+      "line": 79
+    },
+    {
+      "lua": [
+        61807,
+        62267
+      ],
+      "wasm": 117,
+      "name": "main.nearCluster",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 989
+    },
+    {
+      "lua": [
+        62269,
+        62684
+      ],
+      "wasm": 118,
+      "name": "main.farUndergroundTurned",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 1019
+    },
+    {
+      "lua": [
+        62686,
+        62884
+      ],
+      "wasm": 119,
+      "name": "main.forceOf",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 33
+    },
+    {
+      "lua": [
+        62886,
+        63445
+      ],
+      "wasm": 120,
+      "name": "main.onPart",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 914
+    },
+    {
+      "lua": [
+        63447,
+        63576
+      ],
+      "wasm": 121,
+      "name": "main.noteInsertProbe",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/probe.go",
+      "line": 93
+    },
+    {
+      "lua": [
+        63578,
+        63745
+      ],
+      "wasm": 122,
+      "name": "main.legacyBuilt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 665
+    },
+    {
+      "lua": [
+        63747,
+        64121
+      ],
+      "wasm": 123,
+      "name": "main.isOurs",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 54
+    },
+    {
+      "lua": [
+        64123,
+        64953
+      ],
+      "wasm": 124,
+      "name": "main.onNetworkLoss",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 847
+    },
+    {
+      "lua": [
+        64955,
+        65697
+      ],
+      "wasm": 125,
+      "name": "main.reapFastReplaced",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fastreplace.go",
+      "line": 120
+    },
+    {
+      "lua": [
+        65699,
+        67016
+      ],
+      "wasm": 126,
+      "name": "main.noteReplacedBelt",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/fastreplace.go",
+      "line": 346
+    },
+    {
+      "lua": [
+        67018,
+        67364
+      ],
+      "wasm": 127,
+      "name": "main.onNeighbour",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 1058
+    },
+    {
+      "lua": [
+        67366,
+        67533
+      ],
+      "wasm": 128,
+      "name": "main.liveRootList",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/cluster.go",
+      "line": 428
+    },
+    {
+      "lua": [
+        67535,
+        68300
+      ],
+      "wasm": 129,
+      "name": "main.collectCluster",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 532
+    },
+    {
+      "lua": [
+        68302,
+        68348
+      ],
+      "wasm": 130,
+      "name": "main.surfaceByIndex"
+    },
+    {
+      "lua": [
+        68350,
+        70121
+      ],
+      "wasm": 131,
+      "name": "main.classifyEdges",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 585
+    },
+    {
+      "lua": [
+        70123,
+        70300
+      ],
+      "wasm": 132,
+      "name": "main.noteAnnounce",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 736
+    },
+    {
+      "lua": [
+        70302,
+        70385
+      ],
+      "wasm": 133,
+      "name": "main.requeueEveryCluster",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 1015
+    },
+    {
+      "lua": [
+        70387,
+        71375
+      ],
+      "wasm": 134,
+      "name": "main.collectSurfaces",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/lifecycle.go",
+      "line": 512
+    },
+    {
+      "lua": [
+        71377,
+        72335
+      ],
+      "wasm": 135,
+      "name": "main.legacyConvertOne",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 509
+    },
+    {
+      "lua": [
+        72337,
+        72647
+      ],
+      "wasm": 136,
+      "name": "main.legacyGrantTech",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 611
+    },
+    {
+      "lua": [
+        72649,
+        73086
+      ],
+      "wasm": 137,
+      "name": "main.noteLegacyRoots",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 349
+    },
+    {
+      "lua": [
+        73088,
+        73548
+      ],
+      "wasm": 138,
+      "name": "main.logState",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/main.go",
+      "line": 1262
+    },
+    {
+      "lua": [
+        73550,
+        73735
+      ],
+      "wasm": 139,
+      "name": "main.rootsOnSurface",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/cluster.go",
+      "line": 442
+    },
+    {
+      "lua": [
+        73737,
+        73876
+      ],
+      "wasm": 140,
+      "name": "main.markDead",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1844
+    },
+    {
+      "lua": [
+        73878,
+        77341
+      ],
+      "wasm": 141,
+      "name": "main.flushDead",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1875
+    },
+    {
+      "lua": [
+        77343,
+        79062
+      ],
+      "wasm": 142,
+      "name": "main.removePart",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/cluster.go",
+      "line": 293
+    },
+    {
+      "lua": [
+        79064,
+        80668
+      ],
+      "wasm": 143,
+      "name": "main.teardownNet",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1448
+    },
+    {
+      "lua": [
+        80670,
+        80851
+      ],
+      "wasm": 144,
+      "name": "main.endCarry",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 466
+    },
+    {
+      "lua": [
+        80853,
+        81503
+      ],
+      "wasm": 145,
+      "name": "main.rebuildComponent",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/cluster.go",
+      "line": 386
+    },
+    {
+      "lua": [
+        81505,
+        84437
+      ],
+      "wasm": 146,
+      "name": "main.AddPart",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/cluster.go",
+      "line": 207
+    },
+    {
+      "lua": [
+        84439,
+        84935
+      ],
+      "wasm": 147,
+      "name": "main.noteBuiltByPlayer",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 189
+    },
+    {
+      "lua": [
+        84937,
+        85251
+      ],
+      "wasm": 148,
+      "name": "main.fingerprint",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 938
+    },
+    {
+      "lua": [
+        85253,
+        85766
+      ],
+      "wasm": 149,
+      "name": "main.strandedNets",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 1076
+    },
+    {
+      "lua": [
+        85768,
+        86111
+      ],
+      "wasm": 150,
+      "name": "main.logStats",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 476
+    },
+    {
+      "lua": [
+        86113,
+        87119
+      ],
+      "wasm": 151,
+      "name": "main.logHeap",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/gc.go",
+      "line": 271
+    },
+    {
+      "lua": [
+        87121,
+        87171
+      ],
+      "wasm": 152,
+      "name": "main.logU"
+    },
+    {
+      "lua": [
+        87173,
+        87414
+      ],
+      "wasm": 153,
+      "name": "main.noteMinedByPlayer",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 524
+    },
+    {
+      "lua": [
+        87416,
+        87507
+      ],
+      "wasm": 154,
+      "name": "main.logI"
+    },
+    {
+      "lua": [
+        87509,
+        88460
+      ],
+      "wasm": 155,
+      "name": "main.classifySide",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 661
+    },
+    {
+      "lua": [
+        88462,
+        91070
+      ],
+      "wasm": 156,
+      "name": "main.restyle",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/skin.go",
+      "line": 102
+    },
+    {
+      "lua": [
+        91072,
+        91099
+      ],
+      "wasm": 157,
+      "name": "main.refuseOverLimit",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 454
+    },
+    {
+      "lua": [
+        91101,
+        91757
+      ],
+      "wasm": 158,
+      "name": "main.refusalFound",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 303
+    },
+    {
+      "lua": [
+        91759,
+        92274
+      ],
+      "wasm": 159,
+      "name": "main.refuseAdmit",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 393
+    },
+    {
+      "lua": [
+        92276,
+        92987
+      ],
+      "wasm": 160,
+      "name": "main.logRefusedPriority",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 830
+    },
+    {
+      "lua": [
+        92989,
+        94060
+      ],
+      "wasm": 161,
+      "name": "main.tellRefusal",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 526
+    },
+    {
+      "lua": [
+        94062,
+        94471
+      ],
+      "wasm": 162,
+      "name": "main.logRefusedSingleEdge",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 320
+    },
+    {
+      "lua": [
+        94473,
+        95000
+      ],
+      "wasm": 163,
+      "name": "main.refusalDelivered",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 238
+    },
+    {
+      "lua": [
+        95002,
+        95635
+      ],
+      "wasm": 164,
+      "name": "main.hiddenSurface",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 160
+    },
+    {
+      "lua": [
+        95637,
+        95766
+      ],
+      "wasm": 165,
+      "name": "main.logF1",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/logline.go",
+      "line": 159
+    },
+    {
+      "lua": [
+        95768,
+        96266
+      ],
+      "wasm": 166,
+      "name": "(*main.lineWalk).next",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 1092
+    },
+    {
+      "lua": [
+        96268,
+        96497
+      ],
+      "wasm": 167,
+      "name": "main.insertOne",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 1006
+    },
+    {
+      "lua": [
+        96499,
+        97216
+      ],
+      "wasm": 168,
+      "name": "main.gatherAnnounced",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 1104
+    },
+    {
+      "lua": [
+        97218,
+        98641
+      ],
+      "wasm": 169,
+      "name": "main.tellAffected",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 1208
+    },
+    {
+      "lua": [
+        98643,
+        98912
+      ],
+      "wasm": 170,
+      "name": "main.addLimCand",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 849
+    },
+    {
+      "lua": [
+        98914,
+        100478
+      ],
+      "wasm": 171,
+      "name": "main.handBack",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 923
+    },
+    {
+      "lua": [
+        100480,
+        100860
+      ],
+      "wasm": 172,
+      "name": "main.forceOfCluster",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 650
+    },
+    {
+      "lua": [
+        100862,
+        101306
+      ],
+      "wasm": 173,
+      "name": "main.gpsAdd",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 1467
+    },
+    {
+      "lua": [
+        101308,
+        101573
+      ],
+      "wasm": 174,
+      "name": "main.printAffected",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/sedge.go",
+      "line": 1348
+    },
+    {
+      "lua": [
+        101575,
+        102160
+      ],
+      "wasm": 175,
+      "name": "main.spill",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1782
+    },
+    {
+      "lua": [
+        102162,
+        102809
+      ],
+      "wasm": 176,
+      "name": "main.hideFromAllForces",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 121
+    },
+    {
+      "lua": [
+        102811,
+        103231
+      ],
+      "wasm": 177,
+      "name": "main.logRefusedOverLimit",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/limit.go",
+      "line": 351
+    },
+    {
+      "lua": [
+        103233,
+        105507
+      ],
+      "wasm": 178,
+      "name": "main.sweep",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 1539
+    },
+    {
+      "lua": [
+        105509,
+        106136
+      ],
+      "wasm": 179,
+      "name": "main.tally",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/carry.go",
+      "line": 595
+    },
+    {
+      "lua": [
+        106138,
+        106865
+      ],
+      "wasm": 180,
+      "name": "main.classifyStraight",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 715
+    },
+    {
+      "lua": [
+        106867,
+        107525
+      ],
+      "wasm": 181,
+      "name": "main.feedsTile",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/compile.go",
+      "line": 874
+    },
+    {
+      "lua": [
+        107527,
+        107902
+      ],
+      "wasm": 182,
+      "name": "main.legacyCreateArgs",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/legacy.go",
+      "line": 587
+    },
+    {
+      "lua": [
+        107904,
+        108343
+      ],
+      "wasm": 183,
+      "name": "main.shapeWithTileFlipped"
+    },
+    {
+      "lua": [
+        108345,
+        108728
+      ],
+      "wasm": 184,
+      "name": "main.countItemsIn",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 574
+    },
+    {
+      "lua": [
+        108730,
+        108955
+      ],
+      "wasm": 185,
+      "name": "main.logPriorityHead",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 817
+    },
+    {
+      "lua": [
+        108957,
+        109175
+      ],
+      "wasm": 186,
+      "name": "main.flyRefusal",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/priority.go",
+      "line": 728
+    }
+  ]
+}

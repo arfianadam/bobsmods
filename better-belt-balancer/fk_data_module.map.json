@@ -1,0 +1,1948 @@
+{
+  "fklua_map": 1,
+  "module": "fk_data_module.lua",
+  "functions": [
+    {
+      "lua": [
+        2747,
+        2749
+      ],
+      "wasm": 9,
+      "name": "__wasm_call_ctors"
+    },
+    {
+      "lua": [
+        2751,
+        2753
+      ],
+      "wasm": 10,
+      "name": "memcpy",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memcpy.c",
+      "line": 5
+    },
+    {
+      "lua": [
+        2755,
+        2909
+      ],
+      "wasm": 11,
+      "name": "memmove",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memmove.c",
+      "line": 9
+    },
+    {
+      "lua": [
+        2911,
+        2913
+      ],
+      "wasm": 12,
+      "name": "memset",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/lib/wasi-libc/libc-top-half/musl/src/string/memset.c",
+      "line": 4
+    },
+    {
+      "lua": [
+        2915,
+        3071
+      ],
+      "wasm": 13,
+      "name": "internal/itoa.Itoa",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/itoa/itoa.go",
+      "line": 10
+    },
+    {
+      "lua": [
+        3073,
+        3128
+      ],
+      "wasm": 14,
+      "name": "runtime.alloc",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/gc_leaking.go",
+      "line": 35
+    },
+    {
+      "lua": [
+        3130,
+        3296
+      ],
+      "wasm": 15,
+      "name": "unicode/utf8.DecodeRuneInString",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/unicode/utf8/utf8.go",
+      "line": 219
+    },
+    {
+      "lua": [
+        3298,
+        3465
+      ],
+      "wasm": 16,
+      "name": "unicode/utf8.AppendRune",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/unicode/utf8/utf8.go",
+      "line": 410
+    },
+    {
+      "lua": [
+        3467,
+        3880
+      ],
+      "wasm": 17,
+      "name": "unicode/utf8.ValidString",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/unicode/utf8/utf8.go",
+      "line": 529
+    },
+    {
+      "lua": [
+        3882,
+        4059
+      ],
+      "wasm": 18,
+      "name": "(*internal/reflectlite.RawType).Size",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/type.go",
+      "line": 639
+    },
+    {
+      "lua": [
+        4061,
+        4066
+      ],
+      "wasm": 19,
+      "name": "runtime._panic",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/panic.go",
+      "line": 54
+    },
+    {
+      "lua": [
+        4068,
+        5867
+      ],
+      "wasm": 20,
+      "name": "(*internal/reflectlite.RawType).String",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/type.go",
+      "line": 316
+    },
+    {
+      "lua": [
+        5869,
+        6209
+      ],
+      "wasm": 21,
+      "name": "(*internal/reflectlite.RawType).rawField",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/type.go",
+      "line": 484
+    },
+    {
+      "lua": [
+        6211,
+        6250
+      ],
+      "wasm": 22,
+      "name": "runtime.sliceAppend"
+    },
+    {
+      "lua": [
+        6252,
+        6500
+      ],
+      "wasm": 23,
+      "name": "(internal/reflectlite.Kind).String",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/type.go",
+      "line": 57
+    },
+    {
+      "lua": [
+        6502,
+        7103
+      ],
+      "wasm": 24,
+      "name": "(internal/reflectlite.Value).Index",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 958
+    },
+    {
+      "lua": [
+        7105,
+        7276
+      ],
+      "wasm": 25,
+      "name": "(internal/reflectlite.Value).Elem",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 853
+    },
+    {
+      "lua": [
+        7278,
+        7477
+      ],
+      "wasm": 26,
+      "name": "(internal/reflectlite.Value).Field",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 880
+    },
+    {
+      "lua": [
+        7479,
+        7550
+      ],
+      "wasm": 27,
+      "name": "(internal/reflectlite.Value).Bool",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 432
+    },
+    {
+      "lua": [
+        7552,
+        7670
+      ],
+      "wasm": 28,
+      "name": "(internal/reflectlite.Value).Uint",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 502
+    },
+    {
+      "lua": [
+        7672,
+        7791
+      ],
+      "wasm": 29,
+      "name": "(internal/reflectlite.Value).Int",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 455
+    },
+    {
+      "lua": [
+        7793,
+        7908
+      ],
+      "wasm": 30,
+      "name": "(internal/reflectlite.Value).String",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/internal/reflectlite/value.go",
+      "line": 634
+    },
+    {
+      "lua": [
+        7910,
+        9496
+      ],
+      "wasm": 31,
+      "name": "interface:{Error:func:{}{basic:string}}.Error$invoke"
+    },
+    {
+      "lua": [
+        9498,
+        9580
+      ],
+      "wasm": 32,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.fkAlloc#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 773
+    },
+    {
+      "lua": [
+        9582,
+        9601
+      ],
+      "wasm": 33,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.fkFree#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 783
+    },
+    {
+      "lua": [
+        9603,
+        9623
+      ],
+      "wasm": 34,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.fkScratchBase#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 792
+    },
+    {
+      "lua": [
+        9625,
+        9645
+      ],
+      "wasm": 35,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.fkScratchSize#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 795
+    },
+    {
+      "lua": [
+        9647,
+        9654
+      ],
+      "wasm": 36,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.Raise",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 175
+    },
+    {
+      "lua": [
+        9656,
+        9795
+      ],
+      "wasm": 37,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.encodePath",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 574
+    },
+    {
+      "lua": [
+        9797,
+        10896
+      ],
+      "wasm": 38,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.writeDyn"
+    },
+    {
+      "lua": [
+        10898,
+        11689
+      ],
+      "wasm": 39,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.readDyn",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 615
+    },
+    {
+      "lua": [
+        11691,
+        11804
+      ],
+      "wasm": 40,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.Keys",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 409
+    },
+    {
+      "lua": [
+        11806,
+        12172
+      ],
+      "wasm": 41,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.ModVersion",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 447
+    },
+    {
+      "lua": [
+        12174,
+        12653
+      ],
+      "wasm": 42,
+      "name": "github.com/Techrocket9/fklua/guest/go/fkdata.DerivedTypes",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/FkLua/guest/go/fkdata/fkdata.go",
+      "line": 503
+    },
+    {
+      "lua": [
+        12655,
+        12895
+      ],
+      "wasm": 43,
+      "name": "internal/strconv.eiselLemire64",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/atofeisel.go",
+      "line": 24
+    },
+    {
+      "lua": [
+        12897,
+        12947
+      ],
+      "wasm": 44,
+      "name": "(*internal/strconv.decimal).Shift",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/decimal.go",
+      "line": 315
+    },
+    {
+      "lua": [
+        12949,
+        13181
+      ],
+      "wasm": 45,
+      "name": "internal/strconv.leftShift",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/decimal.go",
+      "line": 269
+    },
+    {
+      "lua": [
+        13183,
+        13390
+      ],
+      "wasm": 46,
+      "name": "internal/strconv.rightShift",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/decimal.go",
+      "line": 110
+    },
+    {
+      "lua": [
+        13392,
+        13655
+      ],
+      "wasm": 47,
+      "name": "internal/strconv.formatDigits",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/ftoa.go",
+      "line": 225
+    },
+    {
+      "lua": [
+        13657,
+        13938
+      ],
+      "wasm": 48,
+      "name": "internal/strconv.formatBase10",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/internal/strconv/itoa.go",
+      "line": 191
+    },
+    {
+      "lua": [
+        13940,
+        14177
+      ],
+      "wasm": 49,
+      "name": "strconv.toError",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strconv/number.go",
+      "line": 231
+    },
+    {
+      "lua": [
+        14179,
+        15097
+      ],
+      "wasm": 50,
+      "name": "runtime.reflectValueEqual",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/interface.go",
+      "line": 33
+    },
+    {
+      "lua": [
+        15099,
+        15176
+      ],
+      "wasm": 51,
+      "name": "strconv.Itoa"
+    },
+    {
+      "lua": [
+        15178,
+        17019
+      ],
+      "wasm": 52,
+      "name": "strconv.ParseFloat",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strconv/number.go",
+      "line": 93
+    },
+    {
+      "lua": [
+        17021,
+        17110
+      ],
+      "wasm": 53,
+      "name": "strconv.FormatInt"
+    },
+    {
+      "lua": [
+        17112,
+        17148
+      ],
+      "wasm": 54,
+      "name": "fminimum",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 60
+    },
+    {
+      "lua": [
+        17150,
+        17173
+      ],
+      "wasm": 55,
+      "name": "fminimumf",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 65
+    },
+    {
+      "lua": [
+        17175,
+        17213
+      ],
+      "wasm": 56,
+      "name": "fmaximum",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 70
+    },
+    {
+      "lua": [
+        17215,
+        17240
+      ],
+      "wasm": 57,
+      "name": "fmaximumf",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/float.go",
+      "line": 75
+    },
+    {
+      "lua": [
+        17242,
+        17328
+      ],
+      "wasm": 58,
+      "name": "_initialize",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/runtime_wasmentry.go",
+      "line": 28
+    },
+    {
+      "lua": [
+        17330,
+        17335
+      ],
+      "wasm": 59,
+      "name": "runtime.panicOrGoexit",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/panic.go",
+      "line": 58
+    },
+    {
+      "lua": [
+        17337,
+        17424
+      ],
+      "wasm": 60,
+      "name": "runtime.printitf",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/print.go",
+      "line": 293
+    },
+    {
+      "lua": [
+        17426,
+        17461
+      ],
+      "wasm": 61,
+      "name": "runtime.stringConcat"
+    },
+    {
+      "lua": [
+        17463,
+        17659
+      ],
+      "wasm": 62,
+      "name": "runtime.stringNext",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/string.go",
+      "line": 145
+    },
+    {
+      "lua": [
+        17661,
+        17729
+      ],
+      "wasm": 63,
+      "name": "runtime.stringFromUnicode",
+      "src": "/opt/homebrew/Cellar/tinygo/0.41.1/src/runtime/string.go",
+      "line": 135
+    },
+    {
+      "lua": [
+        17731,
+        17805
+      ],
+      "wasm": 64,
+      "name": "unicode.ToLower",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/unicode/letter.go",
+      "line": 279
+    },
+    {
+      "lua": [
+        17807,
+        17881
+      ],
+      "wasm": 65,
+      "name": "unicode.ToUpper",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/unicode/letter.go",
+      "line": 268
+    },
+    {
+      "lua": [
+        17883,
+        18414
+      ],
+      "wasm": 66,
+      "name": "strings.ContainsRune",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 72
+    },
+    {
+      "lua": [
+        18416,
+        18795
+      ],
+      "wasm": 67,
+      "name": "strings.Join",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 487
+    },
+    {
+      "lua": [
+        18797,
+        19372
+      ],
+      "wasm": 68,
+      "name": "strings.Map",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 532
+    },
+    {
+      "lua": [
+        19374,
+        19657
+      ],
+      "wasm": 69,
+      "name": "strings.Repeat",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 616
+    },
+    {
+      "lua": [
+        19659,
+        20013
+      ],
+      "wasm": 70,
+      "name": "strings.ToLower",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 727
+    },
+    {
+      "lua": [
+        20015,
+        20349
+      ],
+      "wasm": 71,
+      "name": "strings.Trim",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 982
+    },
+    {
+      "lua": [
+        20351,
+        20816
+      ],
+      "wasm": 72,
+      "name": "strings.Replace",
+      "src": "/Users/ymt/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.6.darwin-arm64/src/strings/strings.go",
+      "line": 1138
+    },
+    {
+      "lua": [
+        20818,
+        20952
+      ],
+      "wasm": 73,
+      "name": "github.com/Techrocket9/fkrecipes/go.declaredPackEntries",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 112
+    },
+    {
+      "lua": [
+        20954,
+        21076
+      ],
+      "wasm": 74,
+      "name": "github.com/Techrocket9/fkrecipes/go.researchNumberMaximum"
+    },
+    {
+      "lua": [
+        21078,
+        21261
+      ],
+      "wasm": 75,
+      "name": "github.com/Techrocket9/fkrecipes/go.localeRef",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 885
+    },
+    {
+      "lua": [
+        21263,
+        21503
+      ],
+      "wasm": 76,
+      "name": "github.com/Techrocket9/fkrecipes/go.presetLine",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1223
+    },
+    {
+      "lua": [
+        21505,
+        21783
+      ],
+      "wasm": 77,
+      "name": "github.com/Techrocket9/fkrecipes/go.localisedGroup"
+    },
+    {
+      "lua": [
+        21785,
+        22156
+      ],
+      "wasm": 78,
+      "name": "github.com/Techrocket9/fkrecipes/go.playerFallback",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1378
+    },
+    {
+      "lua": [
+        22158,
+        22167
+      ],
+      "wasm": 79,
+      "name": "github.com/Techrocket9/fkrecipes/go.countFault"
+    },
+    {
+      "lua": [
+        22169,
+        22176
+      ],
+      "wasm": 80,
+      "name": "github.com/Techrocket9/fkrecipes/go.secondsFault"
+    },
+    {
+      "lua": [
+        22178,
+        22192
+      ],
+      "wasm": 81,
+      "name": "github.com/Techrocket9/fkrecipes/go.deferrableCountFault",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1496
+    },
+    {
+      "lua": [
+        22194,
+        22206
+      ],
+      "wasm": 82,
+      "name": "github.com/Techrocket9/fkrecipes/go.deferrableSecondsFault",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1503
+    },
+    {
+      "lua": [
+        22208,
+        22508
+      ],
+      "wasm": 83,
+      "name": "github.com/Techrocket9/fkrecipes/go.declaredNumberProblem",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1540
+    },
+    {
+      "lua": [
+        22510,
+        22929
+      ],
+      "wasm": 84,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.ItemExists$invoke"
+    },
+    {
+      "lua": [
+        22931,
+        23259
+      ],
+      "wasm": 85,
+      "name": "github.com/Techrocket9/fkrecipes/go.probeIn",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/guest.go",
+      "line": 359
+    },
+    {
+      "lua": [
+        23261,
+        23283
+      ],
+      "wasm": 86,
+      "name": "(github.com/Techrocket9/fkrecipes/go.UnimplementedWorld).ItemExists",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 179
+    },
+    {
+      "lua": [
+        23285,
+        23289
+      ],
+      "wasm": 87,
+      "name": "(struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).ItemExists"
+    },
+    {
+      "lua": [
+        23291,
+        23299
+      ],
+      "wasm": 88,
+      "name": "(*struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).ItemExists"
+    },
+    {
+      "lua": [
+        23301,
+        23473
+      ],
+      "wasm": 89,
+      "name": "github.com/Techrocket9/fkrecipes/go.typedIngredients",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1686
+    },
+    {
+      "lua": [
+        23475,
+        24032
+      ],
+      "wasm": 90,
+      "name": "github.com/Techrocket9/fkrecipes/go.setUnitField",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1994
+    },
+    {
+      "lua": [
+        24034,
+        24227
+      ],
+      "wasm": 91,
+      "name": "github.com/Techrocket9/fkrecipes/go.renderCyclePath",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/cycle.go",
+      "line": 262
+    },
+    {
+      "lua": [
+        24229,
+        24874
+      ],
+      "wasm": 92,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).addRecipe",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 576
+    },
+    {
+      "lua": [
+        24876,
+        25214
+      ],
+      "wasm": 93,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).costNumber",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 2121
+    },
+    {
+      "lua": [
+        25216,
+        25452
+      ],
+      "wasm": 94,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).readNumber",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 2088
+    },
+    {
+      "lua": [
+        25454,
+        25764
+      ],
+      "wasm": 95,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).noteFallback",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 646
+    },
+    {
+      "lua": [
+        25766,
+        25803
+      ],
+      "wasm": 96,
+      "name": "(github.com/Techrocket9/fkrecipes/go.settingDecl).emittedName"
+    },
+    {
+      "lua": [
+        25805,
+        26372
+      ],
+      "wasm": 97,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.StartupSetting$invoke"
+    },
+    {
+      "lua": [
+        26374,
+        27619
+      ],
+      "wasm": 98,
+      "name": "github.com/Techrocket9/fkrecipes/go.fromV",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/guest.go",
+      "line": 428
+    },
+    {
+      "lua": [
+        27621,
+        27629
+      ],
+      "wasm": 99,
+      "name": "(*struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).StartupSetting"
+    },
+    {
+      "lua": [
+        27631,
+        27635
+      ],
+      "wasm": 100,
+      "name": "(struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).StartupSetting"
+    },
+    {
+      "lua": [
+        27637,
+        27659
+      ],
+      "wasm": 101,
+      "name": "(github.com/Techrocket9/fkrecipes/go.UnimplementedWorld).StartupSetting",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 152
+    },
+    {
+      "lua": [
+        27661,
+        27669
+      ],
+      "wasm": 102,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.allExistsWorld).StartupSetting"
+    },
+    {
+      "lua": [
+        27671,
+        27675
+      ],
+      "wasm": 103,
+      "name": "(github.com/Techrocket9/fkrecipes/go.allExistsWorld).StartupSetting"
+    },
+    {
+      "lua": [
+        27677,
+        27853
+      ],
+      "wasm": 104,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.TechPrereqs$invoke"
+    },
+    {
+      "lua": [
+        27855,
+        28042
+      ],
+      "wasm": 105,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).fallbackFact",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 757
+    },
+    {
+      "lua": [
+        28044,
+        28492
+      ],
+      "wasm": 106,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).packlessAt",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2255
+    },
+    {
+      "lua": [
+        28494,
+        28931
+      ],
+      "wasm": 107,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).readDropdown",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2662
+    },
+    {
+      "lua": [
+        28933,
+        29071
+      ],
+      "wasm": 108,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.resolution).retractLog",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 831
+    },
+    {
+      "lua": [
+        29073,
+        29235
+      ],
+      "wasm": 109,
+      "name": "github.com/Techrocket9/fkrecipes/go.clampedItemNote",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 1131
+    },
+    {
+      "lua": [
+        29237,
+        29272
+      ],
+      "wasm": 110,
+      "name": "(github.com/Techrocket9/fkrecipes/go.itemDecl).emittedName"
+    },
+    {
+      "lua": [
+        29274,
+        30391
+      ],
+      "wasm": 111,
+      "name": "github.com/Techrocket9/fkrecipes/go.appendLocalised",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2355
+    },
+    {
+      "lua": [
+        30393,
+        30817
+      ],
+      "wasm": 112,
+      "name": "github.com/Techrocket9/fkrecipes/go.localisedChunks",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/value.go",
+      "line": 210
+    },
+    {
+      "lua": [
+        30819,
+        30854
+      ],
+      "wasm": 113,
+      "name": "(github.com/Techrocket9/fkrecipes/go.recipeDecl).emittedName"
+    },
+    {
+      "lua": [
+        30856,
+        30891
+      ],
+      "wasm": 114,
+      "name": "(github.com/Techrocket9/fkrecipes/go.techDecl).emittedName"
+    },
+    {
+      "lua": [
+        30893,
+        31068
+      ],
+      "wasm": 115,
+      "name": "github.com/Techrocket9/fkrecipes/go.strArr",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/value.go",
+      "line": 77
+    },
+    {
+      "lua": [
+        31070,
+        31411
+      ],
+      "wasm": 116,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.TechMaxLevel$invoke"
+    },
+    {
+      "lua": [
+        31413,
+        32496
+      ],
+      "wasm": 117,
+      "name": "github.com/Techrocket9/fkrecipes/go.filterCopiedPacks",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 1924
+    },
+    {
+      "lua": [
+        32498,
+        33205
+      ],
+      "wasm": 118,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.ToolExists$invoke"
+    },
+    {
+      "lua": [
+        33207,
+        33229
+      ],
+      "wasm": 119,
+      "name": "(github.com/Techrocket9/fkrecipes/go.UnimplementedWorld).ToolExists",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 185
+    },
+    {
+      "lua": [
+        33231,
+        33235
+      ],
+      "wasm": 120,
+      "name": "(struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).ToolExists"
+    },
+    {
+      "lua": [
+        33237,
+        33245
+      ],
+      "wasm": 121,
+      "name": "(*struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).ToolExists"
+    },
+    {
+      "lua": [
+        33247,
+        33474
+      ],
+      "wasm": 122,
+      "name": "github.com/Techrocket9/fkrecipes/go.unreadableSourceLine",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2039
+    },
+    {
+      "lua": [
+        33476,
+        33875
+      ],
+      "wasm": 123,
+      "name": "github.com/Techrocket9/fkrecipes/go.resolveUnit",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2125
+    },
+    {
+      "lua": [
+        33877,
+        34707
+      ],
+      "wasm": 124,
+      "name": "github.com/Techrocket9/fkrecipes/go.resolvePackLadders",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2170
+    },
+    {
+      "lua": [
+        34709,
+        35140
+      ],
+      "wasm": 125,
+      "name": "github.com/Techrocket9/fkrecipes/go.mergedItemLine",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2915
+    },
+    {
+      "lua": [
+        35142,
+        35554
+      ],
+      "wasm": 126,
+      "name": "github.com/Techrocket9/fkrecipes/go.mergedItemClamp",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2927
+    },
+    {
+      "lua": [
+        35556,
+        35692
+      ],
+      "wasm": 127,
+      "name": "github.com/Techrocket9/fkrecipes/go.mergedOpening",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2911
+    },
+    {
+      "lua": [
+        35694,
+        35925
+      ],
+      "wasm": 128,
+      "name": "github.com/Techrocket9/fkrecipes/go.holdsDroppedSubtree",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2388
+    },
+    {
+      "lua": [
+        35927,
+        36199
+      ],
+      "wasm": 129,
+      "name": "github.com/Techrocket9/fkrecipes/go.validateNoDuplicatePacks",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2553
+    },
+    {
+      "lua": [
+        36201,
+        36967
+      ],
+      "wasm": 130,
+      "name": "github.com/Techrocket9/fkrecipes/go.matchesAllowedValues",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2639
+    },
+    {
+      "lua": [
+        36969,
+        37977
+      ],
+      "wasm": 131,
+      "name": "github.com/Techrocket9/fkrecipes/go.mergeIngredient",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2777
+    },
+    {
+      "lua": [
+        37979,
+        38486
+      ],
+      "wasm": 132,
+      "name": "github.com/Techrocket9/fkrecipes/go.checkExtra",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 3006
+    },
+    {
+      "lua": [
+        38488,
+        38773
+      ],
+      "wasm": 133,
+      "name": "github.com/Techrocket9/fkrecipes/go.researchUnitTakesItems",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 302
+    },
+    {
+      "lua": [
+        38775,
+        39779
+      ],
+      "wasm": 134,
+      "name": "github.com/Techrocket9/fkrecipes/go.toV",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/guest.go",
+      "line": 392
+    },
+    {
+      "lua": [
+        39781,
+        40858
+      ],
+      "wasm": 135,
+      "name": "github.com/Techrocket9/fkrecipes/go.renderIngredientList",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 376
+    },
+    {
+      "lua": [
+        40860,
+        42130
+      ],
+      "wasm": 136,
+      "name": "github.com/Techrocket9/fkrecipes/go.formatListAmount",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 436
+    },
+    {
+      "lua": [
+        42132,
+        44683
+      ],
+      "wasm": 137,
+      "name": "github.com/Techrocket9/fkrecipes/go.classifyPiece",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 1036
+    },
+    {
+      "lua": [
+        44685,
+        45016
+      ],
+      "wasm": 138,
+      "name": "github.com/Techrocket9/fkrecipes/go.quotable",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 634
+    },
+    {
+      "lua": [
+        45018,
+        45212
+      ],
+      "wasm": 139,
+      "name": "github.com/Techrocket9/fkrecipes/go.isExponentNumber",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 1449
+    },
+    {
+      "lua": [
+        45214,
+        45273
+      ],
+      "wasm": 140,
+      "name": "github.com/Techrocket9/fkrecipes/go.isInvisibleRune",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 1350
+    },
+    {
+      "lua": [
+        45275,
+        45717
+      ],
+      "wasm": 141,
+      "name": "github.com/Techrocket9/fkrecipes/go.codePointHex",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 1295
+    },
+    {
+      "lua": [
+        45719,
+        49440
+      ],
+      "wasm": 142,
+      "name": "github.com/Techrocket9/fkrecipes/go.parseIngredientList",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 223
+    },
+    {
+      "lua": [
+        49442,
+        49518
+      ],
+      "wasm": 143,
+      "name": "github.com/Techrocket9/fkrecipes/go.listProblem",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 657
+    },
+    {
+      "lua": [
+        49520,
+        49641
+      ],
+      "wasm": 144,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.FluidExists$invoke"
+    },
+    {
+      "lua": [
+        49643,
+        49676
+      ],
+      "wasm": 145,
+      "name": "github.com/Techrocket9/fkrecipes/go.existsIn"
+    },
+    {
+      "lua": [
+        49678,
+        50545
+      ],
+      "wasm": 146,
+      "name": "github.com/Techrocket9/fkrecipes/go.resolveName",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 1169
+    },
+    {
+      "lua": [
+        50547,
+        50818
+      ],
+      "wasm": 147,
+      "name": "github.com/Techrocket9/fkrecipes/go.entryProblem",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/ingredientlist.go",
+      "line": 582
+    },
+    {
+      "lua": [
+        50820,
+        50943
+      ],
+      "wasm": 148,
+      "name": "github.com/Techrocket9/fkrecipes/go.suggestion"
+    },
+    {
+      "lua": [
+        50945,
+        50967
+      ],
+      "wasm": 149,
+      "name": "(github.com/Techrocket9/fkrecipes/go.UnimplementedWorld).FluidExists",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 182
+    },
+    {
+      "lua": [
+        50969,
+        50973
+      ],
+      "wasm": 150,
+      "name": "(struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).FluidExists"
+    },
+    {
+      "lua": [
+        50975,
+        50983
+      ],
+      "wasm": 151,
+      "name": "(*struct{github.com/Techrocket9/fkrecipes/go.UnimplementedWorld}).FluidExists"
+    },
+    {
+      "lua": [
+        50985,
+        51229
+      ],
+      "wasm": 152,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).relativeOrder",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 736
+    },
+    {
+      "lua": [
+        51231,
+        51429
+      ],
+      "wasm": 153,
+      "name": "github.com/Techrocket9/fkrecipes/go.StageKindOf",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 231
+    },
+    {
+      "lua": [
+        51431,
+        76517
+      ],
+      "wasm": 154,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).PlanData",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 21
+    },
+    {
+      "lua": [
+        76519,
+        79363
+      ],
+      "wasm": 155,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).validateBindings",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 254
+    },
+    {
+      "lua": [
+        79365,
+        80411
+      ],
+      "wasm": 156,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).validateTextSettings",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 477
+    },
+    {
+      "lua": [
+        80413,
+        80476
+      ],
+      "wasm": 157,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.TechExists$invoke"
+    },
+    {
+      "lua": [
+        80478,
+        82473
+      ],
+      "wasm": 158,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).validateUnit",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2572
+    },
+    {
+      "lua": [
+        82475,
+        82538
+      ],
+      "wasm": 159,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.TechHasResearchTrigger$invoke"
+    },
+    {
+      "lua": [
+        82540,
+        82881
+      ],
+      "wasm": 160,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.TechUnit$invoke"
+    },
+    {
+      "lua": [
+        82883,
+        82994
+      ],
+      "wasm": 161,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).unlockingTech",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 1659
+    },
+    {
+      "lua": [
+        82996,
+        84497
+      ],
+      "wasm": 162,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).validateIngredients",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2412
+    },
+    {
+      "lua": [
+        84499,
+        84911
+      ],
+      "wasm": 163,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).validateNoDuplicates",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2531
+    },
+    {
+      "lua": [
+        84913,
+        84976
+      ],
+      "wasm": 164,
+      "name": "interface:{EntityExists:func:{basic:string}{basic:bool},FluidExists:func:{basic:string}{basic:bool},ItemExists:func:{basic:string}{basic:bool},ModName:func:{}{basic:string},RecipeExists:func:{basic:string}{basic:bool},StartupSetting:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechExists:func:{basic:string}{basic:bool},TechHasResearchTrigger:func:{basic:string}{basic:bool},TechMaxLevel:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},TechNames:func:{}{slice:basic:string},TechPrereqs:func:{basic:string}{slice:basic:string},TechUnit:func:{basic:string}{named:github.com/Techrocket9/fkrecipes/go.Value,basic:bool},ToolExists:func:{basic:string}{basic:bool}}.RecipeExists$invoke"
+    },
+    {
+      "lua": [
+        84978,
+        85480
+      ],
+      "wasm": 165,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).resolveTextList",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1653
+    },
+    {
+      "lua": [
+        85482,
+        86072
+      ],
+      "wasm": 166,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).resolveIngredients",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 2709
+    },
+    {
+      "lua": [
+        86074,
+        86372
+      ],
+      "wasm": 167,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).ingredientsFromLine",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 1707
+    },
+    {
+      "lua": [
+        86374,
+        89723
+      ],
+      "wasm": 168,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).afterResolution",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/data.go",
+      "line": 709
+    },
+    {
+      "lua": [
+        89725,
+        91039
+      ],
+      "wasm": 169,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).run",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/guest.go",
+      "line": 83
+    },
+    {
+      "lua": [
+        91041,
+        91315
+      ],
+      "wasm": 170,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).textSettingBindings",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 141
+    },
+    {
+      "lua": [
+        91317,
+        91680
+      ],
+      "wasm": 171,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).declaredIngredientEntries",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/customize.go",
+      "line": 82
+    },
+    {
+      "lua": [
+        91682,
+        91775
+      ],
+      "wasm": 172,
+      "name": "github.com/Techrocket9/fkrecipes/go.unimplemented",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/world.go",
+      "line": 143
+    },
+    {
+      "lua": [
+        91777,
+        92025
+      ],
+      "wasm": 173,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).IntSetting",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/lib.go",
+      "line": 339
+    },
+    {
+      "lua": [
+        92027,
+        92301
+      ],
+      "wasm": 174,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).LegacyDropdownSettingNeedingLocale",
+      "src": "/Users/ymt/go/pkg/mod/github.com/!techrocket9/fkrecipes/go@v0.1.1/lib.go",
+      "line": 1134
+    },
+    {
+      "lua": [
+        92303,
+        96827
+      ],
+      "wasm": 175,
+      "name": "(*github.com/Techrocket9/fkrecipes/go.Lib).resolveCustomCost$thunk"
+    },
+    {
+      "lua": [
+        96829,
+        100966
+      ],
+      "wasm": 176,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/tune.Plan",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/tune/plan.go",
+      "line": 173
+    },
+    {
+      "lua": [
+        100968,
+        101147
+      ],
+      "wasm": 177,
+      "name": "github.com/Techrocket9/BetterBeltBalancer/guest/go/tune.asIngredients",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/tune/plan.go",
+      "line": 548
+    },
+    {
+      "lua": [
+        101149,
+        101169
+      ],
+      "wasm": 178,
+      "name": "main.onSettings#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 114
+    },
+    {
+      "lua": [
+        101171,
+        110241
+      ],
+      "wasm": 179,
+      "name": "main.onSettings",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 115
+    },
+    {
+      "lua": [
+        110243,
+        110263
+      ],
+      "wasm": 180,
+      "name": "main.onData#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 122
+    },
+    {
+      "lua": [
+        110265,
+        110457
+      ],
+      "wasm": 181,
+      "name": "main.onData",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 124
+    },
+    {
+      "lua": [
+        110459,
+        110479
+      ],
+      "wasm": 182,
+      "name": "main.onFinalFixes#wasmexport",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 154
+    },
+    {
+      "lua": [
+        110481,
+        110486
+      ],
+      "wasm": 183,
+      "name": "main.onFinalFixes",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/main.go",
+      "line": 156
+    },
+    {
+      "lua": [
+        110488,
+        111061
+      ],
+      "wasm": 184,
+      "name": "main.deriveHiddenSpeed",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 97
+    },
+    {
+      "lua": [
+        111063,
+        111360
+      ],
+      "wasm": 185,
+      "name": "main.followCollisionDefaults",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 602
+    },
+    {
+      "lua": [
+        111362,
+        111673
+      ],
+      "wasm": 186,
+      "name": "main.legacy",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/legacy.go",
+      "line": 62
+    },
+    {
+      "lua": [
+        111675,
+        111741
+      ],
+      "wasm": 187,
+      "name": "(main.at).set"
+    },
+    {
+      "lua": [
+        111743,
+        111956
+      ],
+      "wasm": 188,
+      "name": "main.beltLayers",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/entity.go",
+      "line": 157
+    },
+    {
+      "lua": [
+        111958,
+        112122
+      ],
+      "wasm": 189,
+      "name": "main.sameLayers",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 621
+    },
+    {
+      "lua": [
+        112124,
+        114490
+      ],
+      "wasm": 190,
+      "name": "main.legacyStubEntity",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/legacy.go",
+      "line": 80
+    },
+    {
+      "lua": [
+        114492,
+        115551
+      ],
+      "wasm": 191,
+      "name": "main.legacyStubMarker",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/legacy.go",
+      "line": 172
+    },
+    {
+      "lua": [
+        115553,
+        116291
+      ],
+      "wasm": 192,
+      "name": "main.legacyStubItem",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/legacy.go",
+      "line": 214
+    },
+    {
+      "lua": [
+        116293,
+        116335
+      ],
+      "wasm": 193,
+      "name": "main.obj",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/value.go",
+      "line": 26
+    },
+    {
+      "lua": [
+        116337,
+        116566
+      ],
+      "wasm": 194,
+      "name": "main.box",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/value.go",
+      "line": 58
+    },
+    {
+      "lua": [
+        116568,
+        116662
+      ],
+      "wasm": 195,
+      "name": "main.strs",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/value.go",
+      "line": 40
+    },
+    {
+      "lua": [
+        116664,
+        116918
+      ],
+      "wasm": 196,
+      "name": "main.lookupOnlyFlags",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 448
+    },
+    {
+      "lua": [
+        116920,
+        117310
+      ],
+      "wasm": 197,
+      "name": "main.emptySprite",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/value.go",
+      "line": 95
+    },
+    {
+      "lua": [
+        117312,
+        117770
+      ],
+      "wasm": 198,
+      "name": "main.layers",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/value.go",
+      "line": 66
+    },
+    {
+      "lua": [
+        117772,
+        120260
+      ],
+      "wasm": 199,
+      "name": "main.entity",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/entity.go",
+      "line": 45
+    },
+    {
+      "lua": [
+        120262,
+        123508
+      ],
+      "wasm": 200,
+      "name": "main.hidden",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 313
+    },
+    {
+      "lua": [
+        123510,
+        124648
+      ],
+      "wasm": 201,
+      "name": "main.sprites",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/sprite.go",
+      "line": 85
+    },
+    {
+      "lua": [
+        124650,
+        125031
+      ],
+      "wasm": 202,
+      "name": "main.priorityInput",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/priority.go",
+      "line": 41
+    },
+    {
+      "lua": [
+        125033,
+        125331
+      ],
+      "wasm": 203,
+      "name": "main.cloneHidden",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 263
+    },
+    {
+      "lua": [
+        125333,
+        125833
+      ],
+      "wasm": 204,
+      "name": "main.blankAnimation",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 184
+    },
+    {
+      "lua": [
+        125835,
+        127004
+      ],
+      "wasm": 205,
+      "name": "main.auditMarker",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 470
+    },
+    {
+      "lua": [
+        127006,
+        128175
+      ],
+      "wasm": 206,
+      "name": "main.insertProbe",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 523
+    },
+    {
+      "lua": [
+        128177,
+        129069
+      ],
+      "wasm": 207,
+      "name": "main.strip",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 293
+    },
+    {
+      "lua": [
+        129071,
+        129738
+      ],
+      "wasm": 208,
+      "name": "main.blankBeltAnimationSet",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 208
+    },
+    {
+      "lua": [
+        129740,
+        130014
+      ],
+      "wasm": 209,
+      "name": "main.hiddenFlags",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/hidden.go",
+      "line": 225
+    },
+    {
+      "lua": [
+        130016,
+        130887
+      ],
+      "wasm": 210,
+      "name": "main.settings",
+      "src": "/private/tmp/claude-501/-Users-ymt-code-BetterBeltBalancer--claude-worktrees-belt-balancer-bug-response-9b9f70/e734e6fd-a58f-42b1-8597-14a5f1e4c67f/scratchpad/wt/recut/guest/go/data/settings.go",
+      "line": 155
+    }
+  ]
+}

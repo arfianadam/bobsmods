@@ -1,0 +1,90 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.6
+Date: 2026-09-20
+  Bugfixes:
+    - A balancer now follows an underground belt that is turned around from its far end. Rotating either half of an underground pair swaps both halves, but the game reports only the half you pointed at, so when the half beside a balancer changed from going in to coming out (or back) by way of its partner a few tiles away, the balancer kept the old connection and its arrows did not move until something else nearby changed. Rotating the half next to the balancer always worked and still does. Thanks to Gamer433 for the report.
+  Info:
+    - The Factorio 2.0 release, carrying everything 0.3.6 brings to Factorio 2.1 from the same source.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 2026-09-20
+  Bugfixes:
+    - A balancer now follows an underground belt that is turned around from its far end. Rotating either half of an underground pair swaps both halves, but the game reports only the half you pointed at, so when the half beside a balancer changed from going in to coming out (or back) by way of its partner a few tiles away, the balancer kept the old connection and its arrows did not move until something else nearby changed. Rotating the half next to the balancer always worked and still does. Thanks to Gamer433 for the report.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 2026-09-17
+  Bugfixes:
+    - On Factorio 2.0, the mod no longer fails to load beside a mod that adds a collision layer to the game's belts. Cerys is the one this was reported with: it gives every belt a layer of its own so that nothing can be built on its water, and the hidden belt piece this mod places at a balancer's edges was left out of that, which the game refuses with a message naming only this mod. That piece now reads the belt collision layers back at the end of loading and takes whatever they are, and the mod declares Cerys as an optional dependency so that it loads after it. Thanks to toynbeeidea and entitytiger for the reports.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 2026-09-17
+  Bugfixes:
+    - On Factorio 2.1, dropping a balancer part into the middle of a belt line no longer leaves a hole in it. The part takes two belts, one behind and one ahead, which that version does not allow, so it is refused and handed back as before; the belt it replaced is now put back on its tile as well, and the line runs again. The belt comes back empty: whatever it was carrying stays in your inventory, where the game put it when it mined the belt. The returned belt is paid for with the belt item you were refunded, so your inventory ends where it started, and if that item is no longer there the gap stays and the log says which item was missing.
+    - The chat message that lists your balancers after an update now points at every one of them. It carried about the first thirty-five map pings and stopped there, with no sign that it had, while the sentence above them went on naming the exact number: a base with more balancers than that was handed a checklist shorter than it said, and which ones fell off it was not something you could predict. The rest of the list now follows on further lines, as many as it takes, and the map is revealed around every balancer named. Thanks to Gamer433 for the report.
+    - A belt fed from behind by a linked belt is no longer taken as a balancer output. Linked belts are what mods like Wormhole Belts place, and the check that decides whether a belt is already fed from behind did not know about them, so a belt laid across a balancer part's free face with one of them feeding it was connected anyway. The game keeps such a belt straight, so the balancer could only feed it from the side, and an output that carries half a belt unbalances every other output with it. A belt fed from behind by an ordinary belt, an underground belt or a splitter was already left alone and is unchanged.
+  Features:
+    - Balancer parts can be given priority. Point at a part and press ALT + P to give its belt priority, and press it again to take it away; a part with priority carries a mark on it, so a balancer says what it is doing without being opened. A priority output is filled before the balancer's other outputs, while every belt without priority still splits evenly among the others. The priority belongs to the part rather than to the belt, so flagging a part with no belt on it yet is remembered for the belt you lay against it later. The keybind is under Settings > Controls with this mod's name on it if ALT + P is taken on your keyboard.
+    - Priority is kept on the part itself rather than in the mod's own memory, so it survives a blueprint, a copy of that blueprint, shift-clicking one part's settings onto another, and an update of the mod.
+  Info:
+    - This version gives priority to belts leaving a balancer. A belt going into one cannot have priority yet: giving it to a part whose belt feeds the balancer is refused with a message saying so, and nothing about the balancer changes. Priority on an input is a later version.
+    - Priority costs nothing while a balancer runs. It is decided once, when the balancer is built, and turns into ordinary splitter priorities inside the machine; there is no per-tick work of any kind, which is the same promise everything else in this mod makes.
+    - Changing a part's priority rebuilds the balancer, so the items it was holding go straight back inside it, exactly as they do when you add or remove a belt, and nothing is put on the ground. Some changes build a balancer smaller than the one that came down, and while the machine is too full for the smaller one to hold what it is carrying the change is refused instead of spilling the difference: let it empty and try again.
+    - A balancer can be too big to give a belt priority, because a priority belt takes more room inside the machine than an even one. The limit is 32 belts on the balancer's busiest side, and above it nothing moves: the flag is not set, the balancer keeps running exactly as it was, and a message says so with the number of belts that side carries. Building the balancer smaller than that, or splitting it in two, is the way out.
+    - A mod or a scenario can set a part's priority without a keypress: remote.call("better-belt-balancer", "set-part-priority", surface_index, x, y, on) returns whether the flag ended up as asked.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 2026-09-14
+  Bugfixes:
+    - Fixed a permanent freeze that could happen with another mod installed that automatically crafts the items in your quickbar. It appeared when you enabled your personal roboport, or put a balancer part in the quickbar or on the cursor, and the game stopped responding with nothing in the log. The compatibility item this mod defines for saves migrating off Belt Balancer now places a compatibility part, which becomes a real balancer part on the next tick, instead of placing the part directly. Nothing about building or using a balancer changes. Thanks to PiggyWhiskey for the report and the save.
+  Features:
+    - The balancer part recipe setting gains a second setting under it where you write the ingredient list yourself: the amount, then the item's internal name, separated by commas, as in "2 iron-plate, 1 splitter". It applies whenever it does not say default, and while it says default the option picked above is what you get, so all six options work exactly as they did and whichever one you had chosen is kept. The recipe setting's tooltip now lists what each option is made of, written the way the field takes it, so you can start from the one you were on. The word none is accepted as well, and makes a balancer part cost nothing to craft; the recycling recipe the game derives from this one goes with it, so where you have recycling a balancer part can no longer be recycled.
+    - The balancer research cost setting gains three settings under it that reprice the research one field at a time: the science packs, written the same way as the recipe above and taking science packs only; how many units of science the research costs; and how many seconds one unit takes in a lab. The pack field applies whenever it does not say default, and each number applies whenever it is not 0, so a field you leave alone is decided by the tier picked above exactly as it was before. Where the research sits in the technology tree does not move either: the three fields never change its prerequisite. That is still the tier you picked, or the next belt tier down from it where your mods leave that one unpriced, and no prerequisite at all in a mod set where neither the tier you picked nor any tier below it can be read. Whichever tier you had chosen before is kept.
+    - A belt can now be laid over any balancer part, the way a part can be laid over a belt. Until now the parts a balancer was actually using refused it, because each of those carries a hidden belt piece of the mod's own.
+    - A belt may now turn as it leaves a balancer. A belt laid across a part's free face, with nothing behind it, becomes an output and curves away from the balancer, so a corner no longer has to be a tile further out. Both lanes are carried, exactly as a straight output is. Thanks to Gamer433 for the request.
+    - A map setting, "Belts may turn as they leave a balancer", on by default. Turning it off restores the behaviour before this version: a belt laid across a balancer part's face is left unconnected, and only a belt pointing straight out of a part is an output. It is under Settings > Mod settings > Map, needs no restart, and every balancer in the save is re-checked when you change it. A save made before this version keeps its old behaviour: on its first load the setting is turned off for that save, no belt across a balancer's face is read as an output, and a chat message says so with a map ping for each balancer the new rule would change.
+  Changes:
+    - The options in both cost settings are named rather than spelled out. The recipe options read Default, Cheap, Fast belts, Express belts, Splitter and Express splitter, and the research options read Logistics (default), Logistics 2 and Logistics 3. What each option is made of, or which technology it is priced like, is in the setting's tooltip instead: the recipe lists in the internal names the new field takes, and the research tiers by the technology's own name. The old labels were long enough that the closed dropdown cut most of them short. Nothing any option does changes, and a choice you have already made is kept.
+    - On Factorio 2.1, a belt laid where a part was may hand the part next to it a second belt, which that version does not allow. The balancer is then refused and stops until you take the belt away again.
+    - Dragging a belt across a balancer now replaces every part it crosses, as dragging one across a row of splitters does.
+    - A belt that merely starts beside a working balancer part is now that part's output, so a part which already has a belt will refuse it and hand it back. Laying such a line one tile further out, or giving it a belt behind it, leaves it unconnected as before.
+    - A belt running past a balancer is unchanged: a belt that something else already feeds is shared between two sources and would only half fill an output, so it is left alone.
+  Info:
+    - The balancer research now copies the whole research cost of the tier you picked, including its level cap, where earlier versions read only the science packs, the unit count and the time. In a stock game nothing changes: none of Logistics, Logistics 2 or Logistics 3 has a level cap, with or without the expansions. In a mod set that gave one of them several levels, the balancer research gains them too, and only the first level unlocks anything: the levels after it cost science and do nothing.
+    - A settings file written by a newer version of Factorio is discarded whole when the game is rolled back to an older version, and every mod setting in it returns to its default, this mod's included: the two cost options, the two written fields and the two research numbers. Nothing on the settings screen says it happened, so if you try a newer Factorio and come back, expect to set the balancer's options again.
+    - Changing what a balancer part costs to craft edits the one recipe this mod has rather than adding a second one, so an assembling machine already set to make balancer parts loses whatever is in its input slots that the new list does not use. Those items are destroyed rather than dropped on the ground, with nothing said in the log. What the machine had already finished stays in its output slot, and the chests and belts around it keep everything they were holding. A typo introduced into a list that was working does the same thing: the list is set aside whole and the option picked above applies instead, which is a recipe change you did not ask for, and correcting the typo is a second one. Empty the machine before you change the option or edit the field if it is holding something you would miss.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 2026-08-31
+  Bugfixes:
+    - The mod's internal surface no longer appears in the remote view or in any other surface list. It is hidden from every force when it is created, an existing save is repaired on its first load with this version, and a force created later in a game is covered as well. Thanks to CodeW0lf for the report.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2026-08-25
+  Features:
+    - A startup setting for what a balancer part costs to craft: the default recipe, a cheaper one, fast or express belts, or a splitter of either tier. If an option names an item your mods do not have, the nearest thing they do have is used instead, so it is safe in an overhaul pack.
+    - A startup setting for which research unlocks the balancer: Logistics, Logistics 2 or Logistics 3. The cost is read from that technology, so it follows whatever your mods charge for it, and the balancer moves to sit beside it in the technology tree.
+  Changes:
+    - The hidden belts inside a balancer now run at the speed of the fastest belt any installed mod adds, instead of a fixed speed a little above express. Modded belts faster than that are no longer throttled on their way through a balancer. Nothing changes in a vanilla or Space Age game, where the fastest belt is still slower than the balancer's own.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-08-24
+  Info:
+    - The Factorio 2.1 release. Same mod as 0.2.0: on 2.1 every balancer part connects to one belt, the multiple-belts setting does not exist, and opening a 2.0 save that used multiple belts per part recovers each machine's contents beside it and posts the rebuild checklist described under 0.2.0.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-08-24
+  Major Features:
+    - Factorio 2.1 support. 2.1 closed the collision behaviour this mod's belt interfaces relied on, so the rule is now one belt per balancer part: a 4-in 4-out balancer is eight parts, a west column carrying the inputs and an east column carrying the outputs.
+    - A map setting, "Allow multiple belts per balancer part", available on Factorio 2.0 only and off by default. A save that already connects several belts to one part keeps working: the mod turns the setting on for that save at first load and says so in chat.
+  Features:
+    - Turning the setting off while such balancers stand is refused with a chat message that lists every one of them as a clickable map ping, and the map is revealed around each pinged balancer.
+    - A belt laid against a part that already has one is refused with the reason on screen, and the belt is returned to your inventory. Returned pieces say which rule sent them back.
+    - On Factorio 2.1, opening a save built with multiple belts per part keeps every balancer part and belt in place, recovers what the machines were holding onto the ground beside them, and posts a per-force chat checklist with a map ping for each balancer to rebuild.
+    - Balancers adopted from Belt Balancer, Belt Balancer 2 or Belt Balancer 3 that are already built one belt per part compile and run; the rest get the same rebuild checklist.
+  Changes:
+    - The mod description now leads with what the mod does for a megabase.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-08-23
+  Major Features:
+    - Initial release.
