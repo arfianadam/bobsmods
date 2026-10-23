@@ -125,6 +125,14 @@ for _, roboport in pairs(data.raw["roboport"]) do
   end
 end
 
+-- U-235 odds at 5%, taken from U-238 so each craft still yields one item.
+local uranium = {}
+for _, result in pairs(data.raw.recipe["uranium-processing"].results) do
+  uranium[result.name] = result
+end
+uranium["uranium-235"].probability = 0.05
+uranium["uranium-238"].probability = 0.95
+
 for _, robot_type in pairs({ "logistic-robot", "construction-robot" }) do
   for _, robot in pairs(data.raw[robot_type]) do
     robot.max_payload_size = scale_count(robot.max_payload_size)
