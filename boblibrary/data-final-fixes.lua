@@ -38,6 +38,12 @@ end
 for _, belt in pairs(data.raw["underground-belt"]) do
   belt.max_distance = scale_count(belt.max_distance)
 end
+-- Every belt-like entity, Better Belt Balancer's hidden belts included, so balancers stay faster than the belts feeding them.
+for _, belt_type in pairs({ "transport-belt", "underground-belt", "splitter", "lane-splitter", "loader", "loader-1x1", "linked-belt" }) do
+  for _, belt in pairs(data.raw[belt_type]) do
+    belt.speed = belt.speed * 1.5
+  end
+end
 for _, pipe in pairs(data.raw["pipe-to-ground"]) do
   for _, connection in pairs(pipe.fluid_box.pipe_connections) do
     if connection.max_underground_distance then
@@ -141,5 +147,73 @@ for _, robot_type in pairs({ "logistic-robot", "construction-robot" }) do
     if robot.max_speed then
       robot.max_speed = robot.max_speed * 1.5
     end
+  end
+end
+
+-- Turrets, vehicle guns and laser defense at 150% damage, fire rate, turn speed and range.
+-- Worms are type "turret", so enemies are left out.
+local function each(list) -- prototypes accept one table or an array of them
+  return ipairs(list and (list.type and { list } or list) or {})
+end
+-- Shells stop at max_range and beams at max_length, so those have to grow with the range.
+local function scale_reach(ammo_type)
+  for _, action in each(ammo_type and ammo_type.action) do
+    for _, delivery in each(action.action_delivery) do
+      if delivery.max_range then
+        delivery.max_range = delivery.max_range * 1.5
+      end
+      if delivery.max_length then
+        delivery.max_length = delivery.max_length * 1.5
+      end
+    end
+  end
+end
+local ammo_categories = {}
+local function scale_attack(attack)
+  attack.damage_modifier = (attack.damage_modifier or 1) * 1.5
+  attack.cooldown = attack.cooldown / 1.5
+  attack.range = attack.range * 1.5
+  scale_reach(attack.ammo_type)
+  if attack.ammo_category then
+    ammo_categories[attack.ammo_category] = true
+  end
+  for _, category in pairs(attack.ammo_categories or {}) do
+    ammo_categories[category] = true
+  end
+end
+for _, turret_type in pairs({ "ammo-turret", "electric-turret", "fluid-turret" }) do
+  for _, turret in pairs(data.raw[turret_type]) do
+    scale_attack(turret.attack_parameters)
+    if turret.prepare_range then
+      turret.prepare_range = turret.prepare_range * 1.5
+    end
+    if turret.rotation_speed then
+      turret.rotation_speed = turret.rotation_speed * 1.5
+    end
+  end
+end
+-- Guns are shared (artillery turret and wagon, tank tiers, spidertrons), so collect them and scale each once.
+local guns = {}
+for _, gunner_type in pairs({ "artillery-turret", "artillery-wagon", "car", "spider-vehicle" }) do
+  for _, gunner in pairs(data.raw[gunner_type]) do
+    if gunner.turret_rotation_speed then
+      gunner.turret_rotation_speed = gunner.turret_rotation_speed * 1.5
+    end
+    for _, gun in pairs(gunner.guns or { gunner.gun }) do
+      guns[gun] = true
+    end
+  end
+end
+for gun in pairs(guns) do
+  scale_attack(data.raw.gun[gun].attack_parameters)
+end
+for _, equipment in pairs(data.raw["active-defense-equipment"]) do
+  if equipment.automatic then -- discharge defense is a manual area stun, not a turret
+    scale_attack(equipment.attack_parameters)
+  end
+end
+for _, ammo in pairs(data.raw.ammo) do
+  if ammo_categories[ammo.ammo_category] then
+    scale_reach(ammo.ammo_type)
   end
 end
