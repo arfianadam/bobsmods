@@ -150,7 +150,7 @@ for _, robot_type in pairs({ "logistic-robot", "construction-robot" }) do
   end
 end
 
--- Turrets, vehicle guns and laser defense at 150% damage, fire rate, turn speed and range.
+-- Turrets, vehicle guns and laser defense at 125% damage and fire rate, 150% turn speed and range.
 -- Worms are type "turret", so enemies are left out.
 local function each(list) -- prototypes accept one table or an array of them
   return ipairs(list and (list.type and { list } or list) or {})
@@ -170,8 +170,8 @@ local function scale_reach(ammo_type)
 end
 local ammo_categories = {}
 local function scale_attack(attack)
-  attack.damage_modifier = (attack.damage_modifier or 1) * 1.5
-  attack.cooldown = attack.cooldown / 1.5
+  attack.damage_modifier = (attack.damage_modifier or 1) * 1.25
+  attack.cooldown = attack.cooldown / 1.25
   attack.range = attack.range * 1.5
   scale_reach(attack.ammo_type)
   if attack.ammo_category then
