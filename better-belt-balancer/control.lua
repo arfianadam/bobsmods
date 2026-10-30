@@ -328,6 +328,58 @@ H.bind_globals(_G)
 H.bind_members(API.members)
 
 -- ---------------------------------------------------------------------------
+-- Local patch: the items inside a balancer removed by a robot are destroyed
+-- instead of spilled on the floor.
+--
+-- The guest settles a removed network's items in the deferred flush a tick
+-- after the mine event, and only a PLAYER miner gets them pocketed; anything
+-- else spills (carry.go, "THE BENEFICIARY"). So a robot mine is noted here, and
+-- a spill near it in the flush that follows is skipped.
+--
+-- The note lives in `storage` because a save can fall between the mine and the
+-- flush. One list per tick: the flush runs in the next tick's on_tick, before
+-- any robot of that tick has mined anything.
+-- shortcut: a spill is matched by surface and distance only, so another spill
+-- within ROBOT_SPILL_RADIUS in the same flush (a death, a player's full
+-- pocket) is destroyed too; key the note by cluster if that ever bites.
+-- ---------------------------------------------------------------------------
+-- A spill lands at the centre of the balancer's box and the mined part is
+-- inside it, so this only has to cover half a big balancer.
+local ROBOT_SPILL_RADIUS = 64
+local SPILL_MID
+for id, m in pairs(API.members) do
+  if m.class == "LuaSurface" and m.name == "spill_item_stack" then SPILL_MID = id end
+end
+
+local function note_robot_mined(e)
+  local ent = e.entity
+  if not (ent and ent.valid) then return end
+  local c = storage.bbb_robot_mined
+  if not c or c.tick ~= game.tick then
+    c = {tick = game.tick}
+    storage.bbb_robot_mined = c
+  end
+  local p = ent.position
+  c[#c + 1] = {surface = ent.surface_index, x = p.x, y = p.y}
+end
+
+local raw_invoke = H.invoke
+H.invoke = function(h, mid, args, ...)
+  local c = mid == SPILL_MID and storage and storage.bbb_robot_mined
+  if c and c.tick >= game.tick - 1 and type(args) == "table" and args.position then
+    local s = H.get(h)
+    for i = 1, #c do
+      local n = c[i]
+      if s and n.surface == s.index and
+         (n.x - args.position.x) ^ 2 + (n.y - args.position.y) ^ 2 <= ROBOT_SPILL_RADIUS ^ 2 then
+        return H.OK -- nothing spilled: the items are gone
+      end
+    end
+  end
+  return raw_invoke(h, mid, args, ...)
+end
+
+-- ---------------------------------------------------------------------------
 -- Event dispatch.
 --
 -- Handlers are registered ONLY for what the guest asked for. Registering
@@ -835,6 +887,7 @@ function subscribe(id, filterp, mask, namep, namelen)
   local function run_event(e)
     local buf = event_buffer(depth)
     if buf == 0 and ev.size > 0 then return end
+    if ev.name == "on_robot_mined_entity" then note_robot_mined(e) end
     H.write_struct(fields, buf, e)
     return E.fk_on_event(id, buf)
   end
