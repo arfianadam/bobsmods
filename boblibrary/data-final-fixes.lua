@@ -59,8 +59,10 @@ for _, pole in pairs(data.raw["electric-pole"]) do
   pole.supply_area_distance = math.floor(pole.supply_area_distance * 1.5 - grid_offset + 0.5) + grid_offset
 end
 
-for _, panel in pairs(data.raw["solar-panel-equipment"]) do
-  panel.power = scale_energy(panel.power)
+for _, generator_type in pairs({ "solar-panel-equipment", "generator-equipment" }) do
+  for _, generator in pairs(data.raw[generator_type]) do
+    generator.power = scale_energy(generator.power)
+  end
 end
 
 for _, battery_type in pairs({ "accumulator", "battery-equipment" }) do
@@ -147,6 +149,30 @@ for _, robot_type in pairs({ "logistic-robot", "construction-robot" }) do
     if robot.max_speed then
       robot.max_speed = robot.max_speed * 1.5
     end
+  end
+end
+
+-- Module bonuses and beacon strength at 150%, so beaconed bonuses land at 225%. Penalties stay as they are.
+local bonus_when_negative = { consumption = true, pollution = true }
+for _, module in pairs(data.raw.module) do
+  for effect, value in pairs(module.effect) do
+    local negative_is_bonus = bonus_when_negative[effect] or false
+    -- Pollution-create modules exist to add pollution, so for them more is the bonus.
+    if effect == "pollution" and module.category == "pollution-create" then
+      negative_is_bonus = false
+    end
+    if (value < 0) == negative_is_bonus then
+      -- The engine truncates past hundredths, so float noise like 0.58 * 1.5 = 0.8699... would lose a point.
+      module.effect[effect] = math.floor(value * 150 + 0.5) / 100
+    end
+  end
+end
+for _, beacon in pairs(data.raw.beacon) do
+  beacon.distribution_effectivity = beacon.distribution_effectivity * 1.5
+  -- 12 tiles out from the beacon's edge: a 27x27 area instead of 9x9.
+  beacon.supply_area_distance = 12
+  if beacon.distribution_effectivity_bonus_per_quality_level then
+    beacon.distribution_effectivity_bonus_per_quality_level = beacon.distribution_effectivity_bonus_per_quality_level * 1.5
   end
 end
 
