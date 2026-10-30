@@ -1,10 +1,12 @@
 -- Cut and paste (Ctrl+X) normally sends a building's contents off with the robot that mines it.
--- This keeps them aside and puts them into the pasted copy instead: items, fluids and an inserter's held item.
+-- This keeps them aside and puts them into the pasted copy instead: items, fluids, an inserter's held item and
+-- what's on a belt.
 --
 -- storage.moves[old unit_number] = {
 --   player_index, ghosts = pasted ghosts still waiting to be built,
 --   target = new building waiting for the old one to be mined,
---   stash = { [inventory index or "hand"] = script inventory } once the old one is mined,
+--   stash = { [inventory index, "hand" or "belt"] = script inventory } once the old one is mined,
+--   belt = { [slot in stash.belt] = { line, position } } where each belt item sat,
 --   fluids = { [fluidbox index] = Fluid } once the old one is mined,
 --   surface, position, force = where the old building stood,
 -- }
@@ -12,6 +14,15 @@
 -- storage.cutting[player_index] = true while the cut tool is in that player's cursor
 
 local TAG = "bobcutpaste_from"
+local BELTS = {
+  ["transport-belt"] = true,
+  ["underground-belt"] = true,
+  ["splitter"] = true,
+  ["lane-splitter"] = true,
+  ["loader"] = true,
+  ["loader-1x1"] = true,
+  ["linked-belt"] = true,
+}
 
 local function inventories(entity)
   local list = {}
@@ -26,7 +37,7 @@ local function inventories(entity)
 end
 
 local function can_hold(entity)
-  return next(inventories(entity)) or entity.type == "inserter" or #entity.fluidbox > 0
+  return next(inventories(entity)) or entity.type == "inserter" or BELTS[entity.type] or #entity.fluidbox > 0
 end
 
 -- Writing a fluidbox sets its whole fluid segment, while reading gives only this box's share of it
@@ -71,9 +82,18 @@ local function finish(unit, target)
   end
   target = target and target.valid and target or nil
   for index, source in pairs(move.stash) do
-    local destination = target and index ~= "hand" and target.get_inventory(index)
+    local destination = target and type(index) == "number" and target.get_inventory(index)
     if target and index == "hand" then
       target.held_stack.transfer_stack(source[1])
+    elseif target and index == "belt" then
+      for i, spot in pairs(move.belt) do
+        local stack = source[i]
+        if stack.valid_for_read and spot.line <= target.get_max_transport_line_index() then
+          -- forced: items the pasted belts already carried over from their neighbours may sit in the way
+          target.get_transport_line(spot.line).force_insert_at(spot.position, stack, stack.count)
+          stack.clear()
+        end
+      end
     elseif destination then
       for i = 1, #source do
         local stack = source[i]
@@ -161,6 +181,25 @@ local function on_pre_mined(event)
   if entity.type == "inserter" and entity.held_stack.valid_for_read then
     move.stash.hand = game.create_inventory(1)
     move.stash.hand[1].transfer_stack(entity.held_stack)
+  end
+  if BELTS[entity.type] then
+    local stacks, spots = {}, {}
+    for line = 1, entity.get_max_transport_line_index() do
+      for _, item in pairs(entity.get_transport_line(line).get_detailed_contents()) do
+        stacks[#stacks + 1] = item.stack
+        spots[#spots + 1] = { line = line, position = item.position }
+      end
+    end
+    if #stacks > 0 then
+      local stash = game.create_inventory(#stacks)
+      for i, stack in ipairs(stacks) do
+        stash[i].set_stack(stack)
+      end
+      move.stash.belt, move.belt = stash, spots
+      for line = 1, entity.get_max_transport_line_index() do
+        entity.get_transport_line(line).clear()
+      end
+    end
   end
   move.fluids = {}
   local fluidbox = entity.fluidbox

@@ -599,6 +599,19 @@ script.on_event(defines.events.on_robot_built_entity, function(event)
   end
 end)
 
+-- Items on a belt or in an inserter's hand that a robot deconstructs are destroyed, not carried off to storage.
+-- bobcutpaste loads first (see info.json), so a cut building's contents are already set aside by then.
+script.on_event(defines.events.on_robot_pre_mined, function(event)
+  local entity = event.entity
+  if entity.type == "inserter" then
+    entity.held_stack.clear()
+    return
+  end
+  for i = 1, entity.get_max_transport_line_index() do
+    entity.get_transport_line(i).clear()
+  end
+end, { { filter = "transport-belt-connectable" }, { filter = "type", type = "inserter" } })
+
 remote.add_interface("boblogistics", {
   --[[
 Pass this function the name of an inserter, and it will be ignored.
