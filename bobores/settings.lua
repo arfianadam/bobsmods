@@ -5,6 +5,13 @@ data:extend({
     setting_type = "startup",
     default_value = false,
   },
+  {
+    type = "double-setting",
+    name = "bobmods-ores-infinite-depletion-multiplier",
+    setting_type = "startup",
+    default_value = 0,
+    minimum_value = 0,
+  },
 
   {
     type = "bool-setting",

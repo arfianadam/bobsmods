@@ -124,7 +124,8 @@ if settings.startup["bobmods-ores-infiniteore"].value == true then
     if not resource.normal then
       resource.normal = 350
     end
-    resource.infinite_depletion_amount = 0
+    resource.infinite_depletion_amount = (resource.infinite_depletion_amount or 1)
+      * settings.startup["bobmods-ores-infinite-depletion-multiplier"].value
     if not resource.resource_patch_search_radius then
       resource.resource_patch_search_radius = 12
     end

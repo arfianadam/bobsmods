@@ -288,7 +288,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 1.875,
+      crafting_speed = 1.25,
       energy_usage = "650kW",
       energy_source = {
         type = "electric",
@@ -334,7 +334,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 3,
+      crafting_speed = 2,
       energy_usage = "960kW",
       energy_source = {
         type = "electric",
@@ -382,7 +382,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 4.125,
+      crafting_speed = 2.75,
       energy_usage = "1210kW",
       energy_source = {
         type = "electric",
@@ -429,7 +429,7 @@ then
       icon_draw_specification = {
         shift = { 0, -0.3 },
       },
-      crafting_speed = 5.25,
+      crafting_speed = 3.5,
       energy_usage = "1400kW",
       energy_source = {
         type = "electric",

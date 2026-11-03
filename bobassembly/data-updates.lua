@@ -110,31 +110,3 @@ if mods["quality"] then
     })
   end
 end
-
--- Vanilla crafting machines at 150% speed, matching the Bob tiers.
-for machine_type, names in pairs({
-  ["assembling-machine"] = {
-    "assembling-machine-1",
-    "assembling-machine-2",
-    "assembling-machine-3",
-    "chemical-plant",
-    "oil-refinery",
-    "centrifuge",
-    "foundry",
-    "electromagnetic-plant",
-    "biochamber",
-    "cryogenic-plant",
-    "crusher",
-  },
-  furnace = { "stone-furnace", "steel-furnace", "electric-furnace", "recycler" },
-}) do
-  for _, name in pairs(names) do
-    local machine = data.raw[machine_type][name]
-    if machine then
-      machine.crafting_speed = machine.crafting_speed * 1.5
-    end
-  end
-end
-
--- Electric furnaces get a second 1.5x on top, matching Bob's electric furnace 2 and 3.
-data.raw.furnace["electric-furnace"].crafting_speed = data.raw.furnace["electric-furnace"].crafting_speed * 1.5

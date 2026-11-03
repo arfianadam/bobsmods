@@ -64,7 +64,6 @@ if settings.startup["bobmods-assembly-oilfurnaces"].value == true then
       {
         name = "bob-fluid-furnace",
         minable = { result = "bob-fluid-furnace" },
-        crafting_speed = 3,
       },
     }),
     {
